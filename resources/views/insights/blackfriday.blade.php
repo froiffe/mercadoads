@@ -1,0 +1,84 @@
+@extends('layouts.master')
+
+@section('title')
+{{ $page->seo_title }}
+@endsection
+
+@section('meta')
+@if( !is_null($page) )
+<meta name="title" content="{{ $page->seo_title }}" />
+<meta name="description" content="{{ $page->seo_description }}" />
+<meta property="image" content="{{ asset($page->seo_image) }}" />
+
+<meta property="og:title" content="{{ $page->seo_ogtitle }}" />
+<meta property="og:description" content="{{ $page->seo_ogdescription }}" />
+@endif
+<meta property="og:type" content="article" />
+<meta property="og:url" content="{{ Request::url() }}" />
+@endsection
+
+@section('content')
+
+
+<main class="main-insights"  data-scroll-section>
+
+
+    <section class="section-insights-intro">
+        <div class="wrap">
+            <div class="area-txt" data-scroll >
+                <h2 class="title">{!! trans('insights-blackfriday/general.title') !!}</h2>
+            </div>
+            <div class="area-img" data-scroll data-scroll data-scroll-delay="0" data-scroll-speed="1" data-scroll-offset="0">
+                <picture alt="Mercado Libre Insights" class="desktop">
+                    <source srcset="{{ asset(trans('insights-blackfriday/general.image-url-webp')) }}" type="image/webp" media="(min-width: 1024px)">
+                    <source srcset="{{ asset(trans('insights-blackfriday/general.image-url')) }}" type="image/jpg" media="(min-width: 1024px)">
+                    <img loading="lazy" alt="insights">
+                </picture>
+                <picture alt="Mercado Libre Insights" class="mobile">
+                    <source srcset="{{ asset(trans('insights-blackfriday/general.image-url-mobile-webp')) }}" type="image/webp" media="(max-width: 1023px)">
+                    <source srcset="{{ asset(trans('insights-blackfriday/general.image-url-mobile')) }}" type="image/jpg" media="(max-width: 1023px)">
+                    <img loading="lazy" alt="insights">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="section-insights-content" data-scroll>
+        <div class="wrap w-p125">
+            <div class="area-txt">
+                <p class="text text-highlight" data-scroll>{!! trans('insights-blackfriday/general.description') !!}</p>
+
+                <p class="text" data-scroll>{!! trans('insights-blackfriday/general.phrase-1') !!}</p>
+                <p class="text" data-scroll>{!! trans('insights-blackfriday/general.phrase-2') !!}</p>
+                <p class="text" data-scroll>{!! trans('insights-blackfriday/general.phrase-3') !!}</p>
+                <p class="text" data-scroll>{!! trans('insights-blackfriday/general.phrase-4') !!}</p>
+                <p class="text" data-scroll>{!! trans('insights-blackfriday/general.phrase-5') !!}</p>
+                <p class="text" data-scroll>{!! trans('insights-blackfriday/general.phrase-6') !!}</p>
+                <p class="text" data-scroll>{!! trans('insights-blackfriday/general.phrase-7') !!}</p>
+                <p class="text" data-scroll>{!! trans('insights-blackfriday/general.phrase-8') !!}</p>
+
+                @if( trans('insights-blackfriday/general.descarga-content.link-reporte') )
+                <div class="descarga-content" data-scroll style="display:block">
+                    <p class="text" data-scroll>{!! trans('insights-blackfriday/general.descarga-content.phrase') !!}</p>
+                    <ul class="campo-list">
+                        <li class="campo-item">
+                            <div class="campo">
+                                <a href="{{ url(trans('insights-blackfriday/general.descarga-content.link-reporte')) }}" target="_blank" class="link"><span class="icon"></span>{!! trans('insights-blackfriday/general.descarga-content.download-reporte') !!}</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                @endif
+            </div>
+        </div>
+    </section>
+
+    @include('insights.include-more-info')
+
+</main>
+
+
+
+@endsection

@@ -1,0 +1,114 @@
+.section-popups {
+    width: 100vw;
+    height: 100vh;
+    background: $white;
+    position: fixed;
+    z-index: -99;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    &.active {
+        opacity: 1;
+        pointer-events: all;
+        z-index: 99;
+    }
+    .popup-wrap {
+        width: 20.0rem;
+        height: auto;
+        padding: 2.0rem 2.5rem 2.0rem 2.5rem;
+        margin: 0;
+        border-radius: 2.0rem;
+        box-shadow: .0rem .6rem 2.0rem #0000001F;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: left;
+        overflow: auto;
+        @media screen and (min-width: $desktop) {
+            width: 43.5rem;
+            // height: 52.0rem;
+            height: auto;
+            min-height: 29.0rem;
+            max-height: 66.0rem;
+            padding: 5.0rem 5.0rem 7.0rem 5.0rem;
+            margin: 0;
+        }
+        .close_popup{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .icon-alert {
+            width: 4.2rem;
+            height: 4.2rem;
+            display: block;
+            margin: 0 auto 1.0rem auto;
+        }
+        .area-txt {
+            .title {
+                width: 100%;
+                max-width: 100%;
+                text-align: center;
+                margin-bottom: 1.0rem;
+                line-height: 1;
+                @media screen and (min-width: $desktop) {
+                    margin-bottom: 4.0rem;
+                    font-size: 3.0rem;
+                    max-width: 100%;
+                }
+            
+            }
+            .btn{
+                font-size: 0.8rem;
+            }
+            .text {
+                font-size: 0.8rem;
+                @media screen and (min-width: $desktop) {
+                    font-size: 1.6rem;
+                }
+                p, h1, h2, h3, h4, h5, h6 {
+                    @media screen and (min-width: $desktop) {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+        /* BOTTOM */
+        .bottom-content {
+            width: 100%;
+            // position: absolute;
+            // left: 0;
+            // bottom: 0;
+            margin-top: 2.0rem;
+            // padding: .0rem 1.5rem 5.0rem 1.5rem;
+            padding: .0rem 1.5rem;
+            position: static;
+        }
+        .bottom-content ul{
+            text-align: center;
+        }
+        .bottom-content ul li{
+            padding: 4px;
+        }
+        .bottom-content ul li a{
+            display: inline-block;
+            border-bottom: 1px solid black;
+            padding-bottom: 1px;
+        }
+    }
+    &.error {
+        .icon-alert {
+            background: url(../images/icon-alert-error.svg) no-repeat center center / 100% auto;
+        }
+    }
+    &.success {
+        .icon-alert {
+            width: 2.4rem;
+            height: 3.6rem;
+            background: url(../images/icon-alert-success-lila.svg) no-repeat center center / 100% auto;
+        }
+    }
+    // &#module-completed-popup {}
+}
