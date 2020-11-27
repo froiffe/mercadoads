@@ -7302,7 +7302,7 @@ input.vermas {
           padding: 0 calc(100vw * 5 / #{$desktop-break});
           padding-bottom: calc(100vw * 70 / #{$desktop-break});
           height: calc(100vw * 480 / #{$desktop-break});
-          margin-bottom: 15px;
+          margin-bottom: 40px;
         }
         @media screen and (max-width: $tablet) {
           padding: 0 calc(100vw * 5 / 480);
@@ -7366,6 +7366,7 @@ input.vermas {
               font-size: calc(100vw * 29 / #{$desktop-break});
               letter-spacing: calc(100vw * 0.5 / #{$desktop-break});
               margin-bottom: calc(100vw * 15 / #{$desktop-break});
+              min-height: 44px;
             }
             @media screen and (max-width: $tablet) {
               font-size: calc(100vw * 30 / 480);
@@ -7388,6 +7389,7 @@ input.vermas {
               font-size: calc(100vw * 16 / #{$desktop-break});
               letter-spacing: calc(100vw * 0.5 / #{$desktop-break});
               margin-bottom: 10px;
+              min-height: 28px;
             }
             @media screen and (max-width: $tablet) {
               font-size: calc(100vw * 16 / 480);

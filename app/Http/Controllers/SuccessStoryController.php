@@ -21,7 +21,7 @@ class SuccessStoryController extends Controller
             ->where('success_story_translations.is_active', 1)
             ->where('success_story_translations.is_highlight_list', 0)
             ->where('locale', app()->getLocale())
-            ->select('success_stories.*')
+            ->select('success_stories.*')->orderBy('id','desc')
             ->get();
 
         return view('success-stories.index')
