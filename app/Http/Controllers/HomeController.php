@@ -63,6 +63,10 @@ class HomeController extends Controller
         return redirect( trans('routes.' . $routeName) );
     }
 
+    public function landingAwards2020(){
+        return view('landings.awards2020');        
+    }
+
     public function contactSuccess(Request $request)
     {
         $input = $request->all();

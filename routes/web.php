@@ -127,6 +127,11 @@ Route::group(['middleware' => 'setlocale'], function() {
             // 'middleware' => 'page-cache'
         ]);
 
+        Route::get(trans('routes.landings.awards2020'), [
+            'as' => 'landing.awards2020',
+            'uses' => 'HomeController@landingAwards2020',
+        ]);
+
         Route::post('contact-send', [
             'as' => 'contact-send',
             'uses' => 'HomeController@doContact'
