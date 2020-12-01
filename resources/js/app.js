@@ -12,6 +12,7 @@ require('./home');
 require('./solutions');
 require('./contact');
 require('./insights');
+require('./landing');
 import Swiper from 'swiper';
 
 import LocomotiveScroll from 'locomotive-scroll';

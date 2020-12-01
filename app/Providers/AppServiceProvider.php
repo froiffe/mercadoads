@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use App\Solution;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Blade;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -25,5 +26,6 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         view()->share('formatsHeader', Solution::orderBy('position', 'ASC')->get());
+        Blade::component('landings.components.slider', 'slide');
     }
 }
