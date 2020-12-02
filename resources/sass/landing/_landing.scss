@@ -110,12 +110,14 @@ $yellow: rgba(253,227,13,1);
 			    .col-time{
 			    	position: relative;
 			    	display: block;
+			    	width: 100%;
 			    	.count{
 			    		font-size: 120px;
 			    		color: #fff;
 			    		color: rgba(255,255,255,1);
 			    		width: 100%;
 			    		text-align: center;
+			    		display: block;
 			    	}
 			    	.item{
 			    		font-size: 20px;
@@ -296,4 +298,181 @@ $yellow: rgba(253,227,13,1);
 			}
 		}
 	}
+}
+
+
+@media screen and (max-width: 1180px) {
+	.main-landing{
+		.slide-mp{
+			max-width: 900px;
+			margin: 0 auto 51px;
+
+			.slide{
+			
+				.content-logo{
+				    height: 200px;
+					img{
+					    max-width: 175px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 992px) {
+
+	.main-landing{
+		h1{
+			font-size: 42px;
+			letter-spacing: 2px;
+		}
+		h2{
+			font-size: 20px;
+    		letter-spacing: 3px;
+    		line-height: 27px;
+		}
+
+		.container{
+			padding: 0 5px;
+		}
+		section{
+			
+			.text-section {
+			    margin-bottom: 30px;
+				p{
+					font-size: 20px;
+					line-height: 27px;
+				}
+			}
+		}
+		.slide-mp{
+			max-width: 640px;
+			.slide{
+			
+				.content-logo{
+				    height: 200px;
+					
+				}
+			
+				.content-text{
+					.text-01{
+					    font-size: 25px;
+					    margin: 9px 0 36px;
+	    				letter-spacing: 3px;
+					}
+					.text-02{
+						font-size: 23px;
+					    line-height: 32px;
+					}
+				}
+			}
+		}
+	} 
+}
+
+@media screen and (max-width: 768px) {
+	.main-landing{
+		section{
+			&.counter{
+				.date-event{
+					.date{
+						font-size: 22px;
+					}
+
+					.countries{
+						font-size: 16px;
+						letter-spacing: 2px;
+					    line-height: 28px;
+					}
+				}
+				.logo{
+				    width: 90%;
+				    max-width: 550px;
+				    margin: 45px auto 45px;
+				}
+				.time-left {
+					width: 80%;
+					margin: 15px auto 30px;
+
+					.col-time{
+						.count{
+							font-size: 75px;
+							letter-spacing: 0px;
+						}
+
+						.item{
+							font-size: 12px;
+							letter-spacing: 2px;
+						}
+					} 
+				}
+			}
+		}
+		.slide-mp{
+			max-width: 300px;
+			.slide{
+			
+				.content-logo{
+				   
+					img{
+					   
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 640px) {
+	.main-landing{
+		section{
+			&.counter{
+				.date-event{
+					.date{
+						font-size: 22px;
+					}
+
+					.countries{
+						font-size: 16px;
+						letter-spacing: 2px;
+					    line-height: 28px;
+					}
+				}
+				.logo{
+				    width: 90%;
+				    max-width: 450px;
+				    margin: 45px auto 45px;
+				}
+				.time-left {
+					width: 90%;
+					.col-time{
+						.count{
+							font-size: 50px;
+							letter-spacing: 0px;
+						}
+
+						.item{
+							font-size: 12px;
+							letter-spacing: 2px;
+						}
+					} 
+				}
+			}
+		}
+		.slide-mp{
+			max-width: 300px;
+			.slide{
+			
+				.content-logo{
+				   
+					img{
+					   
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 320px) {
+
 }

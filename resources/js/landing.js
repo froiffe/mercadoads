@@ -1,5 +1,6 @@
-require('./jquery.countdown.min');
 require('./slick.min');
+require('./jquery.countdown.min');
+
 
 $(document).ready(function(){
 	if($('.main-landing').length){
@@ -37,8 +38,26 @@ function initCountDown(){
 
 function initSlides(){
 	$('.slide-mp').slick({
-		slidesToShow: 3,
+		slidesToShow: 1,
 		slidesToScroll: 1,
-		dots: true
+		dots: true,
+		mobileFirst:true,
+		responsive: [
+		{
+	      breakpoint: 768,
+	      settings: {
+	        slidesToShow: 2,
+	        slidesToScroll: 1,
+	        dots: true
+	      }
+	    },
+	    {
+	      breakpoint: 992,
+	      settings: {
+	        slidesToShow: 3,
+	        slidesToScroll: 1,
+	        dots: true
+	      }
+	    }]
 	});
 }
