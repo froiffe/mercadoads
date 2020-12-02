@@ -13,7 +13,7 @@ $(document).ready(function(){
 });
 
 function initCountDown(){
-	let hourFinished = '2020/12/17 10:00:00';
+	let hourFinished = $("#countdown-time").attr('data-countdown');
 	$("#countdown-time")
 	  .countdown(hourFinished, function(event) {
 	    $(this).find('.days').find('.count').text(
