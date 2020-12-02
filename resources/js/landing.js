@@ -37,27 +37,33 @@ function initCountDown(){
 }
 
 function initSlides(){
-	$('.slide-mp').slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		dots: true,
-		mobileFirst:true,
-		responsive: [
-		{
-	      breakpoint: 768,
-	      settings: {
-	        slidesToShow: 2,
-	        slidesToScroll: 1,
-	        dots: true
-	      }
-	    },
-	    {
-	      breakpoint: 992,
-	      settings: {
-	        slidesToShow: 3,
-	        slidesToScroll: 1,
-	        dots: true
-	      }
-	    }]
+	$('.slide-mp').each(function(){
+		var slidesDesktop = $(this).attr("slides-to-show");
+
+		$(this).slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			dots: true,
+			mobileFirst:true,
+			responsive: [
+			{
+		      breakpoint: 768,
+		      settings: {
+		        slidesToShow: 2,
+		        slidesToScroll: 1,
+		        dots: true
+		      }
+		    },
+		    {
+		      breakpoint: 992,
+		      settings: {
+		        slidesToShow: slidesDesktop,
+		        slidesToScroll: 1,
+		        dots: true
+		      }
+		    }]
+		});
+
 	});
+	
 }

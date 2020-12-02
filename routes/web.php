@@ -132,6 +132,11 @@ Route::group(['middleware' => 'setlocale'], function() {
             'uses' => 'HomeController@landingAwards2020',
         ]);
 
+        Route::get(trans('routes.landings.ganadores2020'), [
+            'as' => 'landing.ganadores2020',
+            'uses' => 'HomeController@landingGanadores2020',
+        ]);
+
         Route::post('contact-send', [
             'as' => 'contact-send',
             'uses' => 'HomeController@doContact'

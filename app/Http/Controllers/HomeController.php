@@ -67,6 +67,10 @@ class HomeController extends Controller
         return view('landings.awards2020');        
     }
 
+    public function landingGanadores2020(){
+        return view('landings.ganadores2020');        
+    }
+
     public function contactSuccess(Request $request)
     {
         $input = $request->all();
