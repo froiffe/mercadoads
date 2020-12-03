@@ -219,13 +219,13 @@
     					@slide([
                 			'slides' =>  [
                 				(object) [
-                					'logo'=>asset('assets/images/logos/Protex.png')
+                					'logo'=>asset('assets/images/logos/protex.png')
                 				],
                 				(object) [
-                					'logo'=>asset('assets/images/logos/Realme.png')
+                					'logo'=>asset('assets/images/logos/realme.png')
                 				],
                 				(object) [
-                					'logo'=>asset('assets/images/logos/Dell.png')
+                					'logo'=>asset('assets/images/logos/dell.png')
                 				]
                 				]
             			]) @endslide
