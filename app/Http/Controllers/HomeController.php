@@ -64,12 +64,39 @@ class HomeController extends Controller
     }
 
     public function landingAwards2020(){
-        $data['google_calendar_button'] = 'https://www.google.com/calendar/render?action=TEMPLATE&text=Mercado+Ads+Awards&dates=20201217T170000Z/20201217T190000Z&details=Mercado+Ads+Awards+es+la+primera+entrega+de+premios+de+publicidad+en+un+e-commerce.+Es+nuestra+manera+de+celebrar+las+mejores+estrategias+publicitarias+del+año+y+de+seguir+potenciando+el+negocio+de+marcas,+agencias+y+vendedores+en+la+plataforma+N°1+de+Latinoamérica. Mirá el Stream el 17/12/20 en ' . url(trans('routes.landings.awards2020')) . ' o a través de nuestro perfil de linkedin ' . url(trans('routes.linkedin-url')) . '.&sf=true&output=xml';        
-        return view('landings.awards2020',$data);        
+        $data['google_calendar_button'] = 'https://www.google.com/calendar/render?action=TEMPLATE&text=Mercado+Ads+Awards&dates=20201217T170000Z/20201217T190000Z&details=Mercado+Ads+Awards+es+la+primera+entrega+de+premios+de+publicidad+en+un+e-commerce.+Es+nuestra+manera+de+celebrar+las+mejores+estrategias+publicitarias+del+año+y+de+seguir+potenciando+el+negocio+de+marcas,+agencias+y+vendedores+en+la+plataforma+N°1+de+Latinoamérica. Mirá el Stream el 17/12/20 en ' . url(trans('routes.landings.awards2020')) . ' o a través de nuestro perfil de linkedin ' . url(trans('routes.linkedin-url')) . '.&sf=true&output=xml';      
+
+        $data['lang_text']  = $this->getLanguageDataText(app()->getLocale());
+        $data['local_lang']  = app()->getLocale();
+
+        return view('landings.awards2020',$data);
     }
 
     public function landingGanadores2020(){
         return view('landings.ganadores2020');        
+    }
+
+    public function getLanguageDataText(String $lang){
+        $data_text = [];
+        if ($lang == 'es'){
+            $data_text['text-01'] = 'FALTAN';
+            $data_text['text-02'] = 'DÍAS';
+            $data_text['text-03'] = 'HORAS';
+            $data_text['text-04'] = 'MIN';
+            $data_text['text-05'] = 'SEG';
+            $data_text['text-06'] = 'PARA CONOCER LAS MEJORES<br> ESTRATEGIAS PUBLICITARIAS DEL AÑO';
+            $data_text['text-07'] = 'Agendar en mi calendar';
+        }else{
+            $data_text['text-01'] = 'FALTAN';
+            $data_text['text-02'] = 'DIAS';
+            $data_text['text-03'] = 'HORAS';
+            $data_text['text-04'] = 'MIN';
+            $data_text['text-05'] = 'SEG';
+            $data_text['text-06'] = 'PARA SABER AS MELHORES<br> ESTRATÉGIAS DE PUBLICIDADE DO ANO';
+            $data_text['text-07'] = 'Agenda na minha calendar';
+        }
+
+        return $data_text;
     }
 
     public function contactSuccess(Request $request)
