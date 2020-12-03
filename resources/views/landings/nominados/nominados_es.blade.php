@@ -10,107 +10,77 @@
 			<div class="row">
 				<h1>Nominados</h1>
 				<h2>Mejor estrategia de Branding</h2>
-				<h3>ARGENTINA</h3>
+				
 			</div>
 			<div class="row">
-				@slide([
-        			'slides' =>  [
-        				(object) [
-        					'logo'=>asset('assets/images/logos/bgh.png')
-        				],
-        				(object) [
-        					'logo'=>asset('assets/images/logos/mac.png')
-        				],
-        				(object) [
-        					'logo'=>asset('assets/images/logos/vichy.png')
-        				]
-        				]
-    			]) @endslide
+                @slide([
+                    'slidesToShow' => 1,
+                    'layout' => 'awards',
+                    'slides' =>  [
+                        (object) [
+                            'pais' => 'ARGENTINA',
+                            'items' => (object) [
+                                ['logo'=>asset('assets/images/logos/bgh.png')],
+                                ['logo'=>asset('assets/images/logos/mac.png')],
+                                ['logo'=>asset('assets/images/logos/vichy.png')]
+                            ]
+                        ],
+                        (object) [
+                            'pais' => 'México',
+                            'items' => (object) [
+                                ['logo'=>asset('assets/images/logos/pernod-ricard.png')],
+                                ['logo'=>asset('assets/images/logos/huawei.png')],
+                                ['logo'=>asset('assets/images/logos/loreal.png')]
+                            ]
+                        ],
+                        (object) [
+                            'pais' => 'Colombia',
+                            'items' => (object) [
+                                ['logo'=>asset('assets/images/logos/xiaomi.png')],
+                                ['logo'=>asset('assets/images/logos/huawei.png')],
+                                ['logo'=>asset('assets/images/logos/disney.png')]
+                            ]
+                        ]
+                    ]
+                ]) @endslide
 			</div>
-            <div class="separate line-light"></div>
-            <div class="row">
-                <h3>México</h3>
-            </div>
-            <div class="row">
-                @slide([
-                    'slides' =>  [
-                        (object) [
-                            'logo'=>asset('assets/images/logos/pernod-ricard.png')
-                        ],
-                        (object) [
-                            'logo'=>asset('assets/images/logos/huawei.png')
-                        ],
-                        (object) [
-                            'logo'=>asset('assets/images/logos/loreal.png')
-                        ]
-                        ]
-                ]) @endslide
-            </div>
-            <div class="separate line-light"></div>
-            <div class="row">
-                <h3>Colombia</h3>
-            </div>
-            <div class="row">
-                @slide([
-                    'slides' =>  [
-                        (object) [
-                            'logo'=>asset('assets/images/logos/xiaomi.png')
-                        ],
-                        (object) [
-                            'logo'=>asset('assets/images/logos/huawei.png')
-                        ],
-                        (object) [
-                            'logo'=>asset('assets/images/logos/disney.png')
-                        ]
-                        ]
-                ]) @endslide
-            </div>
+            
 		</div>
 	</div>
 	<div class="separate"></div>
 </section>
+
 
 <section class="normal bg-blue">
 	<div class="container">
 		<div class="centered-content">
 			<div class="row">
 				<h2>Mejor Estrategia de Performance</h2>
-				<h3>Argentina</h3>
 			</div>
 			<div class="row">
-				@slide([
-        			'slides' =>  [
-        				(object) [
-        					'logo'=>asset('assets/images/logos/suprabond.png')
-        				],
-        				(object) [
-        					'logo'=>asset('assets/images/logos/tropea.png')
-        				],
-        				(object) [
-        					'logo'=>asset('assets/images/logos/salescom.png')
-        				]
-        				]
-    			]) @endslide
-			</div>
-            <div class="separate line-light"></div>
-            <div class="row">
-                <h3>México</h3>
-            </div>
-            <div class="row">
                 @slide([
+                    'slidesToShow' => 1,
+                    'layout' => 'awards',
                     'slides' =>  [
                         (object) [
-                            'logo'=>asset('assets/images/logos/maybelline.png')
+                            'pais' => 'ARGENTINA',
+                            'items' => (object) [
+                                ['logo'=>asset('assets/images/logos/suprabond.png')],
+                                ['logo'=>asset('assets/images/logos/tropea.png')],
+                                ['logo'=>asset('assets/images/logos/salescom.png')]
+                            ]
                         ],
                         (object) [
-                            'logo'=>asset('assets/images/logos/evolution.png')
-                        ],
-                        (object) [
-                            'logo'=>asset('assets/images/logos/luuna.png')
+                            'pais' => 'México',
+                            'items' => (object) [
+                                ['logo'=>asset('assets/images/logos/maybelline.png')],
+                                ['logo'=>asset('assets/images/logos/evolution.png')],
+                                ['logo'=>asset('assets/images/logos/luuna.png')]
+                            ]
                         ]
-                        ]
+                    ]
                 ]) @endslide
-            </div>
+			</div>
 		</div>
 	</div>
 	<div class="separate"></div>
@@ -121,22 +91,22 @@
 		<div class="centered-content">
 			<div class="row">
 				<h2>Contenido de Alto Impacto</h2>
-				<h3>LATAM</h3>
 			</div>
 			<div class="row">
-				@slide([
-        			'slides' =>  [
-        				(object) [
-        					'logo'=>asset('assets/images/logos/protex.png')
-        				],
-        				(object) [
-        					'logo'=>asset('assets/images/logos/realme.png')
-        				],
-        				(object) [
-        					'logo'=>asset('assets/images/logos/dell.png')
-        				]
-        				]
-    			]) @endslide
+                @slide([
+                    'slidesToShow' => 1,
+                    'layout' => 'awards',
+                    'slides' =>  [
+                        (object) [
+                            'pais' => 'LATAM',
+                            'items' => (object) [
+                                ['logo'=>asset('assets/images/logos/protex.png')],
+                                ['logo'=>asset('assets/images/logos/realme.png')],
+                                ['logo'=>asset('assets/images/logos/dell.png')]
+                            ]
+                        ]
+                    ]
+                ]) @endslide
 			</div>
 		</div>
 	</div>
@@ -148,42 +118,31 @@
 		<div class="centered-content">
 			<div class="row">
 				<h2>Líder en Búsqueda de Marca</h2>
-				<h3>ARGENTINA</h3>
 			</div>
 			<div class="row">
-				@slide([
-        			'slides' =>  [
-        				(object) [
-        					'logo'=>asset('assets/images/logos/bosch.png')
-        				],
-        				(object) [
-        					'logo'=>asset('assets/images/logos/black.decker.png')
-        				],
-        				(object) [
-        					'logo'=>asset('assets/images/logos/philips.png')
-        				]
-        				]
-    			]) @endslide
-			</div>
-            <div class="separate line-light"></div>
-            <div class="row">
-                <h3>MÉXICO</h3>
-            </div>
-            <div class="row">
                 @slide([
+                    'slidesToShow' => 1,
+                    'layout' => 'awards',
                     'slides' =>  [
                         (object) [
-                            'logo'=>asset('assets/images/logos/hp.png')
+                            'pais' => 'ARGENTINA',
+                            'items' => (object) [
+                                ['logo'=>asset('assets/images/logos/bosch.png')],
+                                ['logo'=>asset('assets/images/logos/black.decker.png')],
+                                ['logo'=>asset('assets/images/logos/philips.png')]
+                            ]
                         ],
                         (object) [
-                            'logo'=>asset('assets/images/logos/nike.png')
-                        ],
-                        (object) [
-                            'logo'=>asset('assets/images/logos/skechers.png')
+                            'pais' => 'MÉXICO',
+                            'items' => (object) [
+                                ['logo'=>asset('assets/images/logos/hp.png')],
+                                ['logo'=>asset('assets/images/logos/nike.png')],
+                                ['logo'=>asset('assets/images/logos/skechers.png')]
+                            ]
                         ]
-                        ]
+                    ]
                 ]) @endslide
-            </div>
+			</div>
 		</div>
 	</div>
 	<div class="separate"></div>
@@ -194,43 +153,31 @@
 		<div class="centered-content">
 			<div class="row">
 				<h2>Agencia de Medios del Año</h2>
-				<h3>ARGENTINA</h3>
 			</div>
 			<div class="row">
-				@slide([
-        			'slides' =>  [
-        				(object) [
-        					'logo'=>asset('assets/images/logos/carat.png')
-        				],
-        				(object) [
-        					'logo'=>asset('assets/images/logos/ipg.png')
-        				],
-        				(object) [
-        					'logo'=>asset('assets/images/logos/groupm.png')
-        				]
-        				]
-    			]) @endslide
-			</div>
-            <div class="separate line-light"></div>
-            <div class="row">
-                <h2>Agencia de Medios del Año</h2>
-                <h3>MÉXICO</h3>
-            </div>
-            <div class="row">
                 @slide([
+                    'slidesToShow' => 1,
+                    'layout' => 'awards',
                     'slides' =>  [
                         (object) [
-                            'logo'=>asset('assets/images/logos/mms.media.brands.png')
+                            'pais' => 'ARGENTINA',
+                            'items' => (object) [
+                                ['logo'=>asset('assets/images/logos/carat.png')],
+                                ['logo'=>asset('assets/images/logos/ipg.png')],
+                                ['logo'=>asset('assets/images/logos/groupm.png')]
+                            ]
                         ],
                         (object) [
-                            'logo'=>asset('assets/images/logos/havas.png')
-                        ],
-                        (object) [
-                            'logo'=>asset('assets/images/logos/hph.png')
+                            'pais' => 'MÉXICO',
+                            'items' => (object) [
+                                ['logo'=>asset('assets/images/logos/mms.media.brands.png')],
+                                ['logo'=>asset('assets/images/logos/havas.png')],
+                                ['logo'=>asset('assets/images/logos/hph.png')]
+                            ]
                         ]
-                        ]
+                    ]
                 ]) @endslide
-            </div>
+			</div>
 		</div>
 	</div>
 	<div class="separate"></div>
@@ -241,99 +188,55 @@
 		<div class="centered-content">
 			<div class="row">
 				<h2>Small & medium advertiser of the year</h2>
-				<h3>ARGENTINA</h3>
 			</div>
 			<div class="row">
-				@slide([
-        			'slides' =>  [
-        				(object) [
-        					'logo'=>asset('assets/images/logos/elephant.png')
-        				],
-        				(object) [
-        					'logo'=>asset('assets/images/logos/la.feria.online.png')
-        				],
-        				(object) [
-        					'logo'=>asset('assets/images/logos/electronor.png')
-        				]
-        				]
-    			]) @endslide
+                @slide([
+                    'slidesToShow' => 1,
+                    'layout' => 'awards',
+                    'slides' =>  [
+                        (object) [
+                            'pais' => 'ARGENTINA',
+                            'items' => (object) [
+                                ['logo'=>asset('assets/images/logos/elephant.png')],
+                                ['logo'=>asset('assets/images/logos/la.feria.online.png')],
+                                ['logo'=>asset('assets/images/logos/electronor.png')]
+                            ]
+                        ],
+                        (object) [
+                            'pais' => 'MÉXICO',
+                            'items' => (object) [
+                                ['logo'=>asset('assets/images/logos/evolum.png')],
+                                ['logo'=>asset('assets/images/logos/bbs.evolution.png')],
+                                ['logo'=>asset('assets/images/logos/consumibles.printcolor.mexico.png')]
+                            ]
+                        ],
+                        (object) [
+                            'pais' => 'COLOMBIA',
+                            'items' => (object) [
+                                ['logo'=>asset('assets/images/logos/bio.medical.png')],
+                                ['logo'=>asset('assets/images/logos/vitalicia.oficial.png')],
+                                ['logo'=>asset('assets/images/logos/antik.png')]
+                            ]
+                        ],
+                        (object) [
+                            'pais' => 'CHILE',
+                            'items' => (object) [
+                                ['logo'=>asset('assets/images/logos/bigos.cl.png')],
+                                ['logo'=>asset('assets/images/logos/sociedad.biblica.png')],
+                                ['logo'=>asset('assets/images/logos/cys.market.spa.png')]
+                            ]
+                        ],
+                        (object) [
+                            'pais' => 'URUGUAY',
+                            'items' => (object) [
+                                ['logo'=>asset('assets/images/logos/de.fuegos.barraca.png')],
+                                ['logo'=>asset('assets/images/logos/trimant.png')],
+                                ['logo'=>asset('assets/images/logos/indacar.png')]
+                            ]
+                        ]
+                    ]
+                ]) @endslide
 			</div>
-            <div class="separate line-light"></div>
-            <div class="row">
-                <h3>MÉXICO</h3>
-            </div>
-            <div class="row">
-                @slide([
-                    'slides' =>  [
-                        (object) [
-                            'logo'=>asset('assets/images/logos/evolum.png')
-                        ],
-                        (object) [
-                            'logo'=>asset('assets/images/logos/bbs.evolution.png')
-                        ],
-                        (object) [
-                            'logo'=>asset('assets/images/logos/consumibles.printcolor.mexico.png')
-                        ]
-                        ]
-                ]) @endslide
-            </div>
-            <div class="separate line-light"></div>
-            <div class="row">
-                <h3>COLOMBIA</h3>
-            </div>
-            <div class="row">
-                @slide([
-                    'slides' =>  [
-                        (object) [
-                            'logo'=>asset('assets/images/logos/bio.medical.png')
-                        ],
-                        (object) [
-                            'logo'=>asset('assets/images/logos/vitalicia.oficial.png')
-                        ],
-                        (object) [
-                            'logo'=>asset('assets/images/logos/antik.png')
-                        ]
-                        ]
-                ]) @endslide
-            </div>
-            <div class="separate line-light"></div>
-            <div class="row">
-                <h3>CHILE</h3>
-            </div>
-            <div class="row">
-                @slide([
-                    'slides' =>  [
-                        (object) [
-                            'logo'=>asset('assets/images/logos/bigos.cl.png')
-                        ],
-                        (object) [
-                            'logo'=>asset('assets/images/logos/sociedad.biblica.png')
-                        ],
-                        (object) [
-                            'logo'=>asset('assets/images/logos/cys.market.spa.png')
-                        ]
-                        ]
-                ]) @endslide
-            </div>
-            <div class="separate line-light"></div>
-            <div class="row">
-                <h3>URUGUAY</h3>
-            </div>
-            <div class="row">
-                @slide([
-                    'slides' =>  [
-                        (object) [
-                            'logo'=>asset('assets/images/logos/de.fuegos.barraca.png')
-                        ],
-                        (object) [
-                            'logo'=>asset('assets/images/logos/trimant.png')
-                        ],
-                        (object) [
-                            'logo'=>asset('assets/images/logos/indacar.png')
-                        ]
-                        ]
-                ]) @endslide
-            </div>
 		</div>
 	</div>
 </section>

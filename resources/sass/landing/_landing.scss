@@ -219,9 +219,12 @@ $yellow: rgba(253,227,13,1);
 
 	.slide-mp{
 		.slide{
-			position: relative;
-			float: left;
-			width: 100%;
+			
+			.col-info{
+				position: relative;
+				float: left;
+				width: 33%;
+			}
 			.content-logo{
 				position: relative;
 			    float: left;
@@ -271,6 +274,9 @@ $yellow: rgba(253,227,13,1);
 		&.ganadores-slide{
 		    margin-bottom: 30px;
 			.slide{
+				.col-info{
+					width: 100%;
+				}
 				.content-text{
 					.text-01{
 					    font-size: 28px;
@@ -339,6 +345,7 @@ $yellow: rgba(253,227,13,1);
 }
 
 
+
 @media screen and (max-width: 1180px) {
 	.main-landing{
 		.slide-mp{
@@ -374,6 +381,11 @@ $yellow: rgba(253,227,13,1);
 		.container{
 			padding: 0 5px;
 		}
+		.btn-calendar{
+			max-width: 340px;
+			font-size: 15px;
+			min-width: auto;
+		}
 		section{
 			
 			.text-section {
@@ -385,7 +397,7 @@ $yellow: rgba(253,227,13,1);
 			}
 		}
 		.slide-mp{
-			max-width: 640px;
+			max-width: 740px;
 			.slide{
 			
 				.content-logo{
@@ -467,7 +479,7 @@ $yellow: rgba(253,227,13,1);
 			}
 		}
 		.slide-mp{
-			max-width: 300px;
+			max-width: 600px;
 			.slide{
 			
 				.content-logo{

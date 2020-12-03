@@ -49,7 +49,7 @@ function initSlides(){
 			{
 		      breakpoint: 768,
 		      settings: {
-		        slidesToShow: 2,
+		        slidesToShow: 1,
 		        slidesToScroll: 1,
 		        dots: true
 		      }
@@ -57,7 +57,7 @@ function initSlides(){
 		    {
 		      breakpoint: 992,
 		      settings: {
-		        slidesToShow: slidesDesktop,
+		        slidesToShow: 1,
 		        slidesToScroll: 1,
 		        dots: true
 		      }

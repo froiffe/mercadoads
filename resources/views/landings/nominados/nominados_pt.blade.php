@@ -12,19 +12,20 @@
 				<h2>Melhor Estratégia de Branding</h2>
 			</div>
 			<div class="row">
-				@slide([
-        			'slides' =>  [
-        				(object) [
-        					'logo'=>asset('assets/images/logos/dell.png')
-        				],
-        				(object) [
-        					'logo'=>asset('assets/images/logos/hp.png')
-        				],
-        				(object) [
-        					'logo'=>asset('assets/images/logos/loreal.png')
-        				]
-        				]
-    			]) @endslide
+                @slide([
+                    'slidesToShow' => 1,
+                    'layout' => 'awards',
+                    'slides' =>  [
+                        (object) [
+                            'pais' => '',
+                            'items' => (object) [
+                                ['logo'=>asset('assets/images/logos/dell.png')],
+                                ['logo'=>asset('assets/images/logos/hp.png')],
+                                ['logo'=>asset('assets/images/logos/loreal.png')]
+                            ]
+                        ]
+                    ]
+                ]) @endslide
 			</div>
 		</div>
 	</div>
@@ -37,19 +38,20 @@
 				<h2>Melhor Estratégia de Performance</h2>
 			</div>
 			<div class="row">
-				@slide([
-        			'slides' =>  [
-        				(object) [
-        					'logo'=>asset('assets/images/logos/diageo.png')
-        				],
-        				(object) [
-        					'logo'=>asset('assets/images/logos/luminus-whirlpool.png')
-        				],
-        				(object) [
-        					'logo'=>asset('assets/images/logos/pampers.png')
-        				]
-        				]
-    			]) @endslide
+                @slide([
+                    'slidesToShow' => 1,
+                    'layout' => 'awards',
+                    'slides' =>  [
+                        (object) [
+                            'pais' => '',
+                            'items' => (object) [
+                                ['logo'=>asset('assets/images/logos/diageo.png')],
+                                ['logo'=>asset('assets/images/logos/luminus-whirlpool.png')],
+                                ['logo'=>asset('assets/images/logos/pampers.png')]
+                            ]
+                        ]
+                    ]
+                ]) @endslide
 			</div>
 		</div>
 	</div>
@@ -62,19 +64,20 @@
 				<h2>Líder em Busca por marca</h2>
 			</div>
 			<div class="row">
-				@slide([
-        			'slides' =>  [
-        				(object) [
-        					'logo'=>asset('assets/images/logos/bosch-samsung.png')
-        				],
-        				(object) [
-        					'logo'=>asset('assets/images/logos/razer.png')
-        				],
-        				(object) [
-        					'logo'=>asset('assets/images/logos/black.decker.png')
-        				]
-        				]
-    			]) @endslide
+                @slide([
+                    'slidesToShow' => 1,
+                    'layout' => 'awards',
+                    'slides' =>  [
+                        (object) [
+                            'pais' => '',
+                            'items' => (object) [
+                                ['logo'=>asset('assets/images/logos/bosch-samsung.png')],
+                                ['logo'=>asset('assets/images/logos/razer.png')],
+                                ['logo'=>asset('assets/images/logos/black.decker.png')]
+                            ]
+                        ]
+                    ]
+                ]) @endslide
 			</div>
 		</div>
 	</div>
@@ -87,19 +90,20 @@
 				<h2>Agência de Media do Ano</h2>
 			</div>
 			<div class="row">
-				@slide([
-        			'slides' =>  [
-        				(object) [
-        					'logo'=>asset('assets/images/logos/iprospect-wunderman.png')
-        				],
-        				(object) [
-        					'logo'=>asset('assets/images/logos/enext.png')
-        				],
-        				(object) [
-        					'logo'=>asset('assets/images/logos/global-shopper-wmccann.png')
-        				]
-        				]
-    			]) @endslide
+                @slide([
+                    'slidesToShow' => 1,
+                    'layout' => 'awards',
+                    'slides' =>  [
+                        (object) [
+                            'pais' => '',
+                            'items' => (object) [
+                                ['logo'=>asset('assets/images/logos/iprospect-wunderman.png')],
+                                ['logo'=>asset('assets/images/logos/enext.png')],
+                                ['logo'=>asset('assets/images/logos/global-shopper-wmccann.png')]
+                            ]
+                        ]
+                    ]
+                ]) @endslide
 			</div>
 		</div>
 	</div>
@@ -112,19 +116,20 @@
 				<h2>Agência de Media do Ano</h2>
 			</div>
 			<div class="row">
-				@slide([
-        			'slides' =>  [
-        				(object) [
-        					'logo'=>asset('assets/images/logos/ciclistastore.png')
-        				],
-        				(object) [
-        					'logo'=>asset('assets/images/logos/registron-automacao.png')
-        				],
-        				(object) [
-        					'logo'=>asset('assets/images/logos/bodyaction-oficial.png')
-        				]
-        				]
-    			]) @endslide
+                @slide([
+                    'slidesToShow' => 1,
+                    'layout' => 'awards',
+                    'slides' =>  [
+                        (object) [
+                            'pais' => '',
+                            'items' => (object) [
+                                ['logo'=>asset('assets/images/logos/ciclistastore.png')],
+                                ['logo'=>asset('assets/images/logos/registron-automacao.png')],
+                                ['logo'=>asset('assets/images/logos/bodyaction-oficial.png')]
+                            ]
+                        ]
+                    ]
+                ]) @endslide
 			</div>
 		</div>
 	</div>
