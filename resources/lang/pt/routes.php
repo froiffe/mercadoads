@@ -38,4 +38,5 @@ return [
     'success-stories.details' => 'casos-de-sucesso/',
     'linkedin-url' => 'https://www.linkedin.com/showcase/mercado-livre-publicidade/',
     'landings.awards2020' => 'landings/awards2020',
+    'landings.ganadores2020' => 'landings/ganadores2020',
 ];

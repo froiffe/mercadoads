@@ -84,7 +84,7 @@
 					</div>
 
 					<div class="row">
-						<button class="btn btn-calendar"><i class="icon-calendar"></i>Agendar en mi calendar</button>
+						<button class="btn btn-calendar" onclick="window.open('{!! $google_calendar_button !!}')"><i class="icon-calendar"></i>Agendar en mi calendar</button>
 					</div>
 					
     			</div>

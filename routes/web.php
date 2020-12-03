@@ -128,12 +128,12 @@ Route::group(['middleware' => 'setlocale'], function() {
         ]);
 
         Route::get(trans('routes.landings.awards2020'), [
-            'as' => 'landing.awards2020',
+            'as' => 'landings.awards2020',
             'uses' => 'HomeController@landingAwards2020',
         ]);
 
         Route::get(trans('routes.landings.ganadores2020'), [
-            'as' => 'landing.ganadores2020',
+            'as' => 'landings.ganadores2020',
             'uses' => 'HomeController@landingGanadores2020',
         ]);
 
