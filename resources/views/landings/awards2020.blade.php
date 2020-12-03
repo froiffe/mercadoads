@@ -119,7 +119,7 @@
                 				]
             			]) @endslide
     				</div>
-                    <div class="separate light"></div>
+                    <div class="separate line-light"></div>
                     <div class="row">
                         <h3>México</h3>
                     </div>
@@ -138,7 +138,7 @@
                                 ]
                         ]) @endslide
                     </div>
-                    <div class="separate light"></div>
+                    <div class="separate line-light"></div>
                     <div class="row">
                         <h3>Colombia</h3>
                     </div>
@@ -184,7 +184,7 @@
                 				]
             			]) @endslide
     				</div>
-                    <div class="separate light"></div>
+                    <div class="separate line-light"></div>
                     <div class="row">
                         <h3>México</h3>
                     </div>
@@ -257,7 +257,7 @@
                 				]
             			]) @endslide
     				</div>
-                    <div class="separate light"></div>
+                    <div class="separate line-light"></div>
                     <div class="row">
                         <h3>MÉXICO</h3>
                     </div>
@@ -303,7 +303,7 @@
                 				]
             			]) @endslide
     				</div>
-                    <div class="separate light"></div>
+                    <div class="separate line-light"></div>
                     <div class="row">
                         <h2>Agencia de Medios del Año</h2>
                         <h3>MÉXICO</h3>
@@ -350,7 +350,7 @@
                 				]
             			]) @endslide
     				</div>
-                    <div class="separate light"></div>
+                    <div class="separate line-light"></div>
                     <div class="row">
                         <h3>MÉXICO</h3>
                     </div>
@@ -369,7 +369,7 @@
                                 ]
                         ]) @endslide
                     </div>
-                    <div class="separate light"></div>
+                    <div class="separate line-light"></div>
                     <div class="row">
                         <h3>COLOMBIA</h3>
                     </div>
@@ -388,7 +388,7 @@
                                 ]
                         ]) @endslide
                     </div>
-                    <div class="separate light"></div>
+                    <div class="separate line-light"></div>
                     <div class="row">
                         <h3>CHILE</h3>
                     </div>
@@ -407,7 +407,7 @@
                                 ]
                         ]) @endslide
                     </div>
-                    <div class="separate light"></div>
+                    <div class="separate line-light"></div>
                     <div class="row">
                         <h3>URUGUAY</h3>
                     </div>
