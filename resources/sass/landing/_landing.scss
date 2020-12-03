@@ -48,6 +48,10 @@ $yellow: rgba(253,227,13,1);
 		background-color: #ffe600;
 		margin-top: 60px;
 		margin-bottom: 60px;
+
+		&.light{
+			height: 2px;
+		}
 	}
 
 	h1{
@@ -215,7 +219,9 @@ $yellow: rgba(253,227,13,1);
 
 	.slide-mp{
 		.slide{
-
+			position: relative;
+			float: left;
+			width: 100%;
 			.content-logo{
 				position: relative;
 			    float: left;
@@ -255,6 +261,7 @@ $yellow: rgba(253,227,13,1);
 					font-weight: bold;
 				    line-height: 32px;
 				    text-transform: uppercase;
+				    margin-bottom: 25px;
 				}
 			}
 
@@ -297,7 +304,7 @@ $yellow: rgba(253,227,13,1);
 }
 
 .slick-dots {
-	bottom: -79px;
+	bottom: -25px;
 	li{
 		width: 37px;
 		height: 4px;

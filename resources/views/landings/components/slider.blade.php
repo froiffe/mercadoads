@@ -6,10 +6,12 @@
 	    		<div class="content-logo">
 	    			<img class="logo" src="{{ $slide->logo }}">
 	    		</div>
+	    		@isset($slide->title)
 	    		<div class="content-text">
 	    			<span class="text-01">{{$slide->title}}</span>
 	    			<span class="text-02">{!! $slide->text !!}</span>
 	    		</div>
+	    		@endisset
 	    	</div>
 	    </div>
 	@endforeach

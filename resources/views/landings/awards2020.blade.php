@@ -7,8 +7,8 @@
     				<div class="row"><img class="logo" src="{{ asset('assets/images/logo-awards.svg') }}"></div>
     				<div class="row">
                         @php
-                            $eventBA = new DateTime('2020-12-17 13:00:00');
-                            $eventUser = new DateTime('2020-12-17 13:00:00');
+                            $eventBA = new DateTime('2020-12-17 14:00:00');
+                            $eventUser = new DateTime('2020-12-17 14:00:00');
 
                             $local_tz = new DateTimeZone('America/Argentina/Buenos_Aires');
                             $local = new DateTime('now', $local_tz);
@@ -19,15 +19,17 @@
                             //$ip_address = '179.183.250.219';//brasil
                            // $ip_address = '181.49.73.217';//colobia
                             //$ip_address = '181.211.96.101';//Quito
-                            //$ip_address = '139.47.28.0';//Barcelona esp
+                            $ip_address = '139.47.28.0';//Barcelona esp
 
-                            if($ip_address == '::1'){
-                                $ip_address = '190.173.137.223';
-                            }
+                           
                            
                             $geoPlugin_array = unserialize( file_get_contents('http://www.geoplugin.net/php.gp?ip=' .  $ip_address) );
-                            $timezone = $geoPlugin_array['geoplugin_timezone'];
 
+                            if($geoPlugin_array['geoplugin_timezone']){
+                                $timezone = $geoPlugin_array['geoplugin_timezone'];
+                            }else{
+                                $timezone = 'America/Argentina/Buenos_Aires';
+                            }
 
                             $user   = new DateTime("now", new DateTimeZone($timezone) );
                             $user_offset = $user->getOffset() / 3600;
@@ -78,7 +80,7 @@
 					
 					<div class="row date-event">
 						<div class="row"><p class="date"><b>17 dic</b> Live Streaming</p></div>
-						<div class="row"><span class="countries"><b>13 HS</b> BRA | AR | UY | CL<br><b>11 HS</b> CO<br><b>10 HS</b> MX</span></div>
+						<div class="row"><span class="countries"><b>14 HS</b> BRA | AR | UY | CL<br><b>11 HS</b> MX<br><b>10 HS</b> CO</span></div>
 					</div>
 
 					<div class="row">
@@ -93,8 +95,8 @@
     		<div class="container">
     			<div class="centered-content">
 					<div class="row text-section">
-						<p><b>Mercado Ads Awards</b> es nuestra forma de celebrar las mejores estrategias publicitarias del año y de potenciar el negocio de <b>marcas, agencias y vendedores</b> en toda Latinoamérica.</p>
-		    			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+						<p><b>Mercado Ads Awards</b> es nuestra forma de celebrar las mejores estrategias publicitarias del año y de seguir potenciando el negocio de marcas, agencias y vendedores en toda Latinoamérica.</p>
+                        <p><b>Mercado Ads Awards</b> reúne a los expertos en publicidad de Mercado Libre, Kantar y MediaMonks para premiar a los desempeños más destacados en las siguientes categorías:</p>
     				</div>
 
     				<div class="row">
@@ -106,28 +108,55 @@
     					@slide([
                 			'slides' =>  [
                 				(object) [
-                					'logo'=>asset('assets/images/logos/mac.png'),
-                					'title' => 'Campaña',
-                					'text' => 'LOVES LIPS<br>Mac Loves You'
+                					'logo'=>asset('assets/images/logos/bgh.png')
                 				],
                 				(object) [
-                					'logo'=>asset('assets/images/logos/skip.png'),
-                					'title' => 'Campaña',
-                					'text' => 'Para<br>Diluir'
+                					'logo'=>asset('assets/images/logos/mac.png')
                 				],
                 				(object) [
-                					'logo'=>asset('assets/images/logos/clinique.png'),
-                					'title' => 'Campaña',
-                					'text' => 'OFFICIAL STORE<br>AT MELI'
-                				],
-                				(object) [
-                					'logo'=>asset('assets/images/logos/mac.png'),
-                					'title' => 'Campaña',
-                					'text' => 'LOVES LIPS<br>Mac Loves You'
+                					'logo'=>asset('assets/images/logos/vichy.png')
                 				]
                 				]
             			]) @endslide
     				</div>
+                    <div class="separate light"></div>
+                    <div class="row">
+                        <h3>México</h3>
+                    </div>
+                    <div class="row">
+                        @slide([
+                            'slides' =>  [
+                                (object) [
+                                    'logo'=>asset('assets/images/logos/pernod-ricard.png')
+                                ],
+                                (object) [
+                                    'logo'=>asset('assets/images/logos/huawei.png')
+                                ],
+                                (object) [
+                                    'logo'=>asset('assets/images/logos/loreal.png')
+                                ]
+                                ]
+                        ]) @endslide
+                    </div>
+                    <div class="separate light"></div>
+                    <div class="row">
+                        <h3>Colombia</h3>
+                    </div>
+                    <div class="row">
+                        @slide([
+                            'slides' =>  [
+                                (object) [
+                                    'logo'=>asset('assets/images/logos/xiaomi.png')
+                                ],
+                                (object) [
+                                    'logo'=>asset('assets/images/logos/huawei.png')
+                                ],
+                                (object) [
+                                    'logo'=>asset('assets/images/logos/disney.png')
+                                ]
+                                ]
+                        ]) @endslide
+                    </div>
     			</div>
     		</div>
     		<div class="separate"></div>
@@ -138,34 +167,42 @@
     			<div class="centered-content">
 					<div class="row">
     					<h2>Mejor Estrategia de Performance</h2>
-    					<h3>COLOMBIA</h3>
+    					<h3>Argentina</h3>
     				</div>
     				<div class="row">
     					@slide([
                 			'slides' =>  [
                 				(object) [
-                					'logo'=>asset('assets/images/logos/mac.png'),
-                					'title' => 'Campaña',
-                					'text' => 'LOVES LIPS<br>Mac Loves You'
+                					'logo'=>asset('assets/images/logos/suprabond.png')
                 				],
                 				(object) [
-                					'logo'=>asset('assets/images/logos/skip.png'),
-                					'title' => 'Campaña',
-                					'text' => 'Para<br>Diluir'
+                					'logo'=>asset('assets/images/logos/tropea.png')
                 				],
                 				(object) [
-                					'logo'=>asset('assets/images/logos/clinique.png'),
-                					'title' => 'Campaña',
-                					'text' => 'OFFICIAL STORE<br>AT MELI'
-                				],
-                				(object) [
-                					'logo'=>asset('assets/images/logos/mac.png'),
-                					'title' => 'Campaña',
-                					'text' => 'LOVES LIPS<br>Mac Loves You'
+                					'logo'=>asset('assets/images/logos/salescom.png')
                 				]
                 				]
             			]) @endslide
     				</div>
+                    <div class="separate light"></div>
+                    <div class="row">
+                        <h3>México</h3>
+                    </div>
+                    <div class="row">
+                        @slide([
+                            'slides' =>  [
+                                (object) [
+                                    'logo'=>asset('assets/images/logos/maybelline.png')
+                                ],
+                                (object) [
+                                    'logo'=>asset('assets/images/logos/evolution.png')
+                                ],
+                                (object) [
+                                    'logo'=>asset('assets/images/logos/luuna.png')
+                                ]
+                                ]
+                        ]) @endslide
+                    </div>
     			</div>
     		</div>
     		<div class="separate"></div>
@@ -176,30 +213,19 @@
     			<div class="centered-content">
 					<div class="row">
     					<h2>Contenido de Alto Impacto</h2>
-    					<h3>CHILE</h3>
+    					<h3>LATAM</h3>
     				</div>
     				<div class="row">
     					@slide([
                 			'slides' =>  [
                 				(object) [
-                					'logo'=>asset('assets/images/logos/mac.png'),
-                					'title' => 'Campaña',
-                					'text' => 'LOVES LIPS<br>Mac Loves You'
+                					'logo'=>asset('assets/images/logos/Protex.png')
                 				],
                 				(object) [
-                					'logo'=>asset('assets/images/logos/skip.png'),
-                					'title' => 'Campaña',
-                					'text' => 'Para<br>Diluir'
+                					'logo'=>asset('assets/images/logos/Realme.png')
                 				],
                 				(object) [
-                					'logo'=>asset('assets/images/logos/clinique.png'),
-                					'title' => 'Campaña',
-                					'text' => 'OFFICIAL STORE<br>AT MELI'
-                				],
-                				(object) [
-                					'logo'=>asset('assets/images/logos/mac.png'),
-                					'title' => 'Campaña',
-                					'text' => 'LOVES LIPS<br>Mac Loves You'
+                					'logo'=>asset('assets/images/logos/Dell.png')
                 				]
                 				]
             			]) @endslide
@@ -214,34 +240,42 @@
     			<div class="centered-content">
 					<div class="row">
     					<h2>Líder en Búsqueda de Marca</h2>
-    					<h3>MEXICO</h3>
+    					<h3>ARGENTINA</h3>
     				</div>
     				<div class="row">
     					@slide([
                 			'slides' =>  [
                 				(object) [
-                					'logo'=>asset('assets/images/logos/mac.png'),
-                					'title' => 'Campaña',
-                					'text' => 'LOVES LIPS<br>Mac Loves You'
+                					'logo'=>asset('assets/images/logos/bosch.png')
                 				],
                 				(object) [
-                					'logo'=>asset('assets/images/logos/skip.png'),
-                					'title' => 'Campaña',
-                					'text' => 'Para<br>Diluir'
+                					'logo'=>asset('assets/images/logos/black.decker.png')
                 				],
                 				(object) [
-                					'logo'=>asset('assets/images/logos/clinique.png'),
-                					'title' => 'Campaña',
-                					'text' => 'OFFICIAL STORE<br>AT MELI'
-                				],
-                				(object) [
-                					'logo'=>asset('assets/images/logos/mac.png'),
-                					'title' => 'Campaña',
-                					'text' => 'LOVES LIPS<br>Mac Loves You'
+                					'logo'=>asset('assets/images/logos/philips.png')
                 				]
                 				]
             			]) @endslide
     				</div>
+                    <div class="separate light"></div>
+                    <div class="row">
+                        <h3>MÉXICO</h3>
+                    </div>
+                    <div class="row">
+                        @slide([
+                            'slides' =>  [
+                                (object) [
+                                    'logo'=>asset('assets/images/logos/hp.png')
+                                ],
+                                (object) [
+                                    'logo'=>asset('assets/images/logos/nike.png')
+                                ],
+                                (object) [
+                                    'logo'=>asset('assets/images/logos/skechers.png')
+                                ]
+                                ]
+                        ]) @endslide
+                    </div>
     			</div>
     		</div>
     		<div class="separate"></div>
@@ -252,34 +286,43 @@
     			<div class="centered-content">
 					<div class="row">
     					<h2>Agencia de Medios del Año</h2>
-    					<h3>URUGUAY</h3>
+    					<h3>ARGENTINA</h3>
     				</div>
     				<div class="row">
     					@slide([
                 			'slides' =>  [
                 				(object) [
-                					'logo'=>asset('assets/images/logos/mac.png'),
-                					'title' => 'Campaña',
-                					'text' => 'LOVES LIPS<br>Mac Loves You'
+                					'logo'=>asset('assets/images/logos/carat.png')
                 				],
                 				(object) [
-                					'logo'=>asset('assets/images/logos/skip.png'),
-                					'title' => 'Campaña',
-                					'text' => 'Para<br>Diluir'
+                					'logo'=>asset('assets/images/logos/ipg.png')
                 				],
                 				(object) [
-                					'logo'=>asset('assets/images/logos/clinique.png'),
-                					'title' => 'Campaña',
-                					'text' => 'OFFICIAL STORE<br>AT MELI'
-                				],
-                				(object) [
-                					'logo'=>asset('assets/images/logos/mac.png'),
-                					'title' => 'Campaña',
-                					'text' => 'LOVES LIPS<br>Mac Loves You'
+                					'logo'=>asset('assets/images/logos/groupm.png')
                 				]
                 				]
             			]) @endslide
     				</div>
+                    <div class="separate light"></div>
+                    <div class="row">
+                        <h2>Agencia de Medios del Año</h2>
+                        <h3>MÉXICO</h3>
+                    </div>
+                    <div class="row">
+                        @slide([
+                            'slides' =>  [
+                                (object) [
+                                    'logo'=>asset('assets/images/logos/mms.media.brands.png')
+                                ],
+                                (object) [
+                                    'logo'=>asset('assets/images/logos/havas.png')
+                                ],
+                                (object) [
+                                    'logo'=>asset('assets/images/logos/hph.png')
+                                ]
+                                ]
+                        ]) @endslide
+                    </div>
     			</div>
     		</div>
     		<div class="separate"></div>
@@ -296,28 +339,93 @@
     					@slide([
                 			'slides' =>  [
                 				(object) [
-                					'logo'=>asset('assets/images/logos/mac.png'),
-                					'title' => 'Campaña',
-                					'text' => 'LOVES LIPS<br>Mac Loves You'
+                					'logo'=>asset('assets/images/logos/elephant.png')
                 				],
                 				(object) [
-                					'logo'=>asset('assets/images/logos/skip.png'),
-                					'title' => 'Campaña',
-                					'text' => 'Para<br>Diluir'
+                					'logo'=>asset('assets/images/logos/la.feria.online.png')
                 				],
                 				(object) [
-                					'logo'=>asset('assets/images/logos/clinique.png'),
-                					'title' => 'Campaña',
-                					'text' => 'OFFICIAL STORE<br>AT MELI'
-                				],
-                				(object) [
-                					'logo'=>asset('assets/images/logos/mac.png'),
-                					'title' => 'Campaña',
-                					'text' => 'LOVES LIPS<br>Mac Loves You'
+                					'logo'=>asset('assets/images/logos/electronor.png')
                 				]
                 				]
             			]) @endslide
     				</div>
+                    <div class="separate light"></div>
+                    <div class="row">
+                        <h3>MÉXICO</h3>
+                    </div>
+                    <div class="row">
+                        @slide([
+                            'slides' =>  [
+                                (object) [
+                                    'logo'=>asset('assets/images/logos/evolum.png')
+                                ],
+                                (object) [
+                                    'logo'=>asset('assets/images/logos/bbs.evolution.png')
+                                ],
+                                (object) [
+                                    'logo'=>asset('assets/images/logos/consumibles.printcolor.mexico.png')
+                                ]
+                                ]
+                        ]) @endslide
+                    </div>
+                    <div class="separate light"></div>
+                    <div class="row">
+                        <h3>COLOMBIA</h3>
+                    </div>
+                    <div class="row">
+                        @slide([
+                            'slides' =>  [
+                                (object) [
+                                    'logo'=>asset('assets/images/logos/bio.medical.png')
+                                ],
+                                (object) [
+                                    'logo'=>asset('assets/images/logos/vitalicia.oficial.png')
+                                ],
+                                (object) [
+                                    'logo'=>asset('assets/images/logos/antik.png')
+                                ]
+                                ]
+                        ]) @endslide
+                    </div>
+                    <div class="separate light"></div>
+                    <div class="row">
+                        <h3>CHILE</h3>
+                    </div>
+                    <div class="row">
+                        @slide([
+                            'slides' =>  [
+                                (object) [
+                                    'logo'=>asset('assets/images/logos/bigos.cl.png')
+                                ],
+                                (object) [
+                                    'logo'=>asset('assets/images/logos/sociedad.biblica.png')
+                                ],
+                                (object) [
+                                    'logo'=>asset('assets/images/logos/cys.market.spa.png')
+                                ]
+                                ]
+                        ]) @endslide
+                    </div>
+                    <div class="separate light"></div>
+                    <div class="row">
+                        <h3>URUGUAY</h3>
+                    </div>
+                    <div class="row">
+                        @slide([
+                            'slides' =>  [
+                                (object) [
+                                    'logo'=>asset('assets/images/logos/de.fuegos.barraca.png')
+                                ],
+                                (object) [
+                                    'logo'=>asset('assets/images/logos/trimant.png')
+                                ],
+                                (object) [
+                                    'logo'=>asset('assets/images/logos/indacar.png')
+                                ]
+                                ]
+                        ]) @endslide
+                    </div>
     			</div>
     		</div>
     	
