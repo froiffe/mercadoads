@@ -128,7 +128,7 @@ Route::group(['middleware' => 'setlocale'], function() {
         ]);
 
         Route::get(trans('routes.landings.awards2020'), [
-            'as' => 'landings.mercadoads-awards',
+            'as' => 'landings.awards2020',
             'uses' => 'HomeController@landingAwards2020',
         ]);
 
