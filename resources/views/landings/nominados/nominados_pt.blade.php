@@ -3,8 +3,8 @@
         
 		<div class="centered-content">
 			<div class="row text-section">
-				<p><b>Mercado Ads Awards</b> es nuestra forma de celebrar las mejores estrategias publicitarias del año y de seguir potenciando el negocio de marcas, agencias y vendedores en toda Latinoamérica.</p>
-                <p><b>Mercado Ads Awards</b> reúne a los expertos en publicidad de Mercado Libre, Kantar y MediaMonks para premiar a los desempeños más destacados en las siguientes categorías:</p>
+				<p><b>Mercado Ads Awards</b> é a nossa maneira de celebrar as melhores estratégias publicitárias do ano e de continuar potencializando os negócios de marcas, agências e vendedores na plataforma N°1 da América Latina.</p>
+                <p><b>O Mercado Ads Awards</b> reúne especialistas em publicidade do Mercado Libre, Kantar e MediaMonks para premiar os artistas mais destacados nas seguintes categorias:</p>
 			</div>
 
 			<div class="row">
@@ -47,7 +47,33 @@
                             'items' => (object) [
                                 ['logo'=>asset('assets/images/logos/diageo.png')],
                                 ['logo'=>asset('assets/images/logos/luminus-whirlpool.png')],
-                                ['logo'=>asset('assets/images/logos/pampers.png')]
+                                ['logo'=>asset('assets/images/logos/ford.png')]
+                            ]
+                        ]
+                    ]
+                ]) @endslide
+			</div>
+		</div>
+	</div>
+	<div class="separate"></div>
+</section>
+<section class="normal bg-blue">
+	<div class="container">
+		<div class="centered-content">
+			<div class="row">
+				<h2>Contenido de Alto Impacto</h2>
+			</div>
+			<div class="row">
+                @slide([
+                    'slidesToShow' => 1,
+                    'layout' => 'awards',
+                    'slides' =>  [
+                        (object) [
+                            'pais' => '',
+                            'items' => (object) [
+                                ['logo'=>asset('assets/images/logos/protex.png')],
+                                ['logo'=>asset('assets/images/logos/intel.png')],
+                                ['logo'=>asset('assets/images/logos/heineken.png')]
                             ]
                         ]
                     ]
@@ -71,8 +97,8 @@
                         (object) [
                             'pais' => '',
                             'items' => (object) [
-                                ['logo'=>asset('assets/images/logos/bosch-samsung.png')],
-                                ['logo'=>asset('assets/images/logos/razer.png')],
+                                ['logo'=>asset('assets/images/logos/acer.png')],
+                                ['logo'=>asset('assets/images/logos/bmw.png')],
                                 ['logo'=>asset('assets/images/logos/black.decker.png')]
                             ]
                         ]
@@ -97,9 +123,9 @@
                         (object) [
                             'pais' => '',
                             'items' => (object) [
-                                ['logo'=>asset('assets/images/logos/iprospect-wunderman.png')],
+                                ['logo'=>asset('assets/images/logos/wunderman.png')],
                                 ['logo'=>asset('assets/images/logos/enext.png')],
-                                ['logo'=>asset('assets/images/logos/global-shopper-wmccann.png')]
+                                ['logo'=>asset('assets/images/logos/wmccann.png')]
                             ]
                         ]
                     ]
@@ -107,13 +133,12 @@
 			</div>
 		</div>
 	</div>
-	<div class="separate"></div>
 </section>
 <section class="normal bg-blue">
 	<div class="container">
 		<div class="centered-content">
 			<div class="row">
-				<h2>Agência de Media do Ano</h2>
+				<h2>Vendedor como Anunciante do Ano</h2>
 			</div>
 			<div class="row">
                 @slide([
@@ -123,9 +148,9 @@
                         (object) [
                             'pais' => '',
                             'items' => (object) [
-                                ['logo'=>asset('assets/images/logos/ciclistastore.png')],
-                                ['logo'=>asset('assets/images/logos/registron-automacao.png')],
-                                ['logo'=>asset('assets/images/logos/bodyaction-oficial.png')]
+                                ['logo'=>asset('assets/images/logos/ismafer.png')],
+                                ['logo'=>asset('assets/images/logos/foz-panos.png')],
+                                ['logo'=>asset('assets/images/logos/roupas-para.ciclismo.png')]
                             ]
                         ]
                     ]

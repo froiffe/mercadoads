@@ -64,7 +64,7 @@ class HomeController extends Controller
     }
 
     public function landingAwards2020(){
-        $data['google_calendar_button'] = 'https://www.google.com/calendar/render?action=TEMPLATE&text=Mercado+Ads+Awards&dates=20201217T170000Z/20201217T190000Z&details=Mercado+Ads+Awards+es+la+primera+entrega+de+premios+de+publicidad+en+un+e-commerce.+Es+nuestra+manera+de+celebrar+las+mejores+estrategias+publicitarias+del+año+y+de+seguir+potenciando+el+negocio+de+marcas,+agencias+y+vendedores+en+la+plataforma+N°1+de+Latinoamérica. Mirá el Stream el 17/12/20 en ' . url(trans('routes.landings.awards2020')) . ' o a través de nuestro perfil de linkedin ' . url(trans('routes.linkedin-url')) . '.&sf=true&output=xml';      
+        $data['google_calendar_button'] = (app()->getLocale()=='es') ? 'https://www.google.com/calendar/render?action=TEMPLATE&text=Mercado+Ads+Awards&dates=20201217T170000Z/20201217T180000Z&details=Mercado+Ads+Awards+es+la+primera+entrega+de+premios+de+publicidad+en+un+e-commerce.+Es+nuestra+manera+de+celebrar+las+mejores+estrategias+publicitarias+del+año+y+de+seguir+potenciando+el+negocio+de+marcas,+agencias+y+vendedores+en+la+plataforma+N°1+de+Latinoamérica.+Mirá+el+Stream+el+17/12/20+en+' . url(trans('routes.landings.awards2020')) . '+o+a+través+de+nuestro+perfil+de+linkedin+' . url(trans('routes.linkedin-url')) . '.&sf=true&output=xml' : 'https://www.google.com/calendar/render?action=TEMPLATE&text=Mercado+Ads+Awards&dates=20201217T170000Z/20201217T180000Z&details=Mercado+Ads+Awards+é+a+primeira+entrega+de+prêmios+de+publicidade+em+um+e-commerce.+É+a+nossa+maneira+de+celebrar+as+melhores+estratégias+publicitárias+do+ano+e+de+continuar+potencializando+os+negócios+de+marcas,+agências+e+vendedores+na+plataforma+N°1+da+América+Latina.+Veja+o+Stream+de+17/12/20+no+' . url(trans('routes.landings.awards2020')) . '+ou+através+do+nosso+perfil+no+LinkedIn+' . url(trans('routes.linkedin-url')) . '.&sf=true&output=xml';      
 
         $data['lang_text']  = $this->getLanguageDataText(app()->getLocale());
         $data['local_lang']  = app()->getLocale();
@@ -86,14 +86,16 @@ class HomeController extends Controller
             $data_text['text-05'] = 'SEG';
             $data_text['text-06'] = 'PARA CONOCER LAS MEJORES<br> ESTRATEGIAS PUBLICITARIAS DEL AÑO';
             $data_text['text-07'] = 'Agendar en mi calendar';
+            $data_text['text-08'] = '<b>14 a 15 HS</b> AR | CL | UY <br><b>12 a 13 HS</b> CO<br><b>11 a 12 HS</b> MX';
         }else{
             $data_text['text-01'] = 'FALTAN';
             $data_text['text-02'] = 'DIAS';
             $data_text['text-03'] = 'HORAS';
             $data_text['text-04'] = 'MIN';
             $data_text['text-05'] = 'SEG';
-            $data_text['text-06'] = 'PARA SABER AS MELHORES<br> ESTRATÉGIAS DE PUBLICIDADE DO ANO';
-            $data_text['text-07'] = 'Agenda na minha calendar';
+            $data_text['text-06'] = 'PARA SABER O MELHOR<br> ESTRATÉGIAS DE PUBLICIDADE DO ANO';
+            $data_text['text-07'] = 'Agendar no meu calendário ';
+            $data_text['text-08'] = '<b>14 a 15 HS</b>';
         }
 
         return $data_text;

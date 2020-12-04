@@ -38,7 +38,7 @@
                             'items' => (object) [
                                 ['logo'=>asset('assets/images/logos/xiaomi.png')],
                                 ['logo'=>asset('assets/images/logos/huawei.png')],
-                                ['logo'=>asset('assets/images/logos/disney.png')]
+                                ['logo'=>asset('assets/images/logos/nespresso.png')]
                             ]
                         ]
                     ]
@@ -65,16 +65,16 @@
                         (object) [
                             'pais' => 'ARGENTINA',
                             'items' => (object) [
-                                ['logo'=>asset('assets/images/logos/suprabond.png')],
-                                ['logo'=>asset('assets/images/logos/tropea.png')],
-                                ['logo'=>asset('assets/images/logos/salescom.png')]
+                                ['logo'=>asset('assets/images/logos/gadnic.png')],
+                                ['logo'=>asset('assets/images/logos/karcher.png')],
+                                ['logo'=>asset('assets/images/logos/simmons.png')]
                             ]
                         ],
                         (object) [
                             'pais' => 'México',
                             'items' => (object) [
                                 ['logo'=>asset('assets/images/logos/maybelline.png')],
-                                ['logo'=>asset('assets/images/logos/evolution.png')],
+                                ['logo'=>asset('assets/images/logos/loreal.png')],
                                 ['logo'=>asset('assets/images/logos/luuna.png')]
                             ]
                         ]
@@ -100,9 +100,9 @@
                         (object) [
                             'pais' => 'LATAM',
                             'items' => (object) [
-                                ['logo'=>asset('assets/images/logos/protex.png')],
                                 ['logo'=>asset('assets/images/logos/realme.png')],
-                                ['logo'=>asset('assets/images/logos/dell.png')]
+                                ['logo'=>asset('assets/images/logos/toyota.png')],
+                                ['logo'=>asset('assets/images/logos/johnnie-walker.png')]
                             ]
                         ]
                     ]
@@ -128,16 +128,16 @@
                             'pais' => 'ARGENTINA',
                             'items' => (object) [
                                 ['logo'=>asset('assets/images/logos/bosch.png')],
-                                ['logo'=>asset('assets/images/logos/black.decker.png')],
-                                ['logo'=>asset('assets/images/logos/philips.png')]
+                                ['logo'=>asset('assets/images/logos/intel.png')],
+                                ['logo'=>asset('assets/images/logos/nespresso.png')]
                             ]
                         ],
                         (object) [
                             'pais' => 'MÉXICO',
                             'items' => (object) [
-                                ['logo'=>asset('assets/images/logos/hp.png')],
+                                ['logo'=>asset('assets/images/logos/under-armour.png')],
                                 ['logo'=>asset('assets/images/logos/nike.png')],
-                                ['logo'=>asset('assets/images/logos/skechers.png')]
+                                ['logo'=>asset('assets/images/logos/xiaomi.png')]
                             ]
                         ]
                     ]
@@ -162,17 +162,17 @@
                         (object) [
                             'pais' => 'ARGENTINA',
                             'items' => (object) [
-                                ['logo'=>asset('assets/images/logos/carat.png')],
-                                ['logo'=>asset('assets/images/logos/ipg.png')],
-                                ['logo'=>asset('assets/images/logos/groupm.png')]
+                                ['logo'=>asset('assets/images/logos/groupm.png')],
+                                ['logo'=>asset('assets/images/logos/havas.png')],
+                                ['logo'=>asset('assets/images/logos/omg.png')]
                             ]
                         ],
                         (object) [
                             'pais' => 'MÉXICO',
                             'items' => (object) [
-                                ['logo'=>asset('assets/images/logos/mms.media.brands.png')],
-                                ['logo'=>asset('assets/images/logos/havas.png')],
-                                ['logo'=>asset('assets/images/logos/hph.png')]
+                                ['logo'=>asset('assets/images/logos/publicis-group.png')],
+                                ['logo'=>asset('assets/images/logos/groupm.png')],
+                                ['logo'=>asset('assets/images/logos/omg.png')]
                             ]
                         ]
                     ]
@@ -187,7 +187,7 @@
 	<div class="container">
 		<div class="centered-content">
 			<div class="row">
-				<h2>Small & medium advertiser of the year</h2>
+				<h2>Vendedor Anunciante del año</h2>
 			</div>
 			<div class="row">
                 @slide([
@@ -197,41 +197,41 @@
                         (object) [
                             'pais' => 'ARGENTINA',
                             'items' => (object) [
-                                ['logo'=>asset('assets/images/logos/elephant.png')],
-                                ['logo'=>asset('assets/images/logos/la.feria.online.png')],
-                                ['logo'=>asset('assets/images/logos/electronor.png')]
+                                ['logo'=>asset('assets/images/logos/ferreteria-bulfer.png')],
+                                ['logo'=>asset('assets/images/logos/4-aspas.png')],
+                                ['logo'=>asset('assets/images/logos/electroworld.png')]
                             ]
                         ],
                         (object) [
                             'pais' => 'MÉXICO',
                             'items' => (object) [
-                                ['logo'=>asset('assets/images/logos/evolum.png')],
-                                ['logo'=>asset('assets/images/logos/bbs.evolution.png')],
-                                ['logo'=>asset('assets/images/logos/consumibles.printcolor.mexico.png')]
+                                ['logo'=>asset('assets/images/logos/ferreterias-mexico.png')],
+                                ['logo'=>asset('assets/images/logos/slim-company.png')],
+                                ['logo'=>asset('assets/images/logos/melitronics.png')]
                             ]
                         ],
                         (object) [
                             'pais' => 'COLOMBIA',
                             'items' => (object) [
-                                ['logo'=>asset('assets/images/logos/bio.medical.png')],
-                                ['logo'=>asset('assets/images/logos/vitalicia.oficial.png')],
-                                ['logo'=>asset('assets/images/logos/antik.png')]
+                                ['logo'=>asset('assets/images/logos/north-bayou.png')],
+                                ['logo'=>asset('assets/images/logos/case-shop.png')],
+                                ['logo'=>asset('assets/images/logos/pamo-colombia.png')]
                             ]
                         ],
                         (object) [
                             'pais' => 'CHILE',
                             'items' => (object) [
-                                ['logo'=>asset('assets/images/logos/bigos.cl.png')],
-                                ['logo'=>asset('assets/images/logos/sociedad.biblica.png')],
-                                ['logo'=>asset('assets/images/logos/cys.market.spa.png')]
+                                ['logo'=>asset('assets/images/logos/suppletech.png')],
+                                ['logo'=>asset('assets/images/logos/musicworld.png')],
+                                ['logo'=>asset('assets/images/logos/revel-sports.png')]
                             ]
                         ],
                         (object) [
                             'pais' => 'URUGUAY',
                             'items' => (object) [
-                                ['logo'=>asset('assets/images/logos/de.fuegos.barraca.png')],
-                                ['logo'=>asset('assets/images/logos/trimant.png')],
-                                ['logo'=>asset('assets/images/logos/indacar.png')]
+                                ['logo'=>asset('assets/images/logos/electroventas.png')],
+                                ['logo'=>asset('assets/images/logos/la-cueva-muebles.png')],
+                                ['logo'=>asset('assets/images/logos/pro-deco.png')]
                             ]
                         ]
                     ]

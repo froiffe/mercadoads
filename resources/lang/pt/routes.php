@@ -36,7 +36,7 @@ return [
     'insights.cybermonday' => 'insights/cybermonday',
     'success-stories' => 'casos-de-sucesso',
     'success-stories.details' => 'casos-de-sucesso/',
-    'linkedin-url' => 'https://www.linkedin.com/showcase/mercado-livre-publicidade/',
-    'landings.awards2020' => 'mercadoads-awards',
+    'linkedin-url' => 'https://www.linkedin.com/showcase/mercadoadsbrasil/',
+    'landings.awards2020' => 'mercadoads-awards-brasil',
     'landings.ganadores2020' => 'landings/ganadores2020',
 ];

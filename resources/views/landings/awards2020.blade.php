@@ -81,7 +81,7 @@
 					
 					<div class="row date-event">
 						<div class="row"><p class="date"><b>17 dic</b> Live Streaming</p></div>
-						<div class="row"><span class="countries"><b>14 HS</b> BRA | AR | UY | CL<br><b>11 HS</b> MX<br><b>12 HS</b> CO</span></div>
+						<div class="row"><span class="countries">{!!$lang_text['text-08']!!}</span></div>
 					</div>
 
 					<div class="row">
