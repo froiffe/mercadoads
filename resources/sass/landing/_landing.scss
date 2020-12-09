@@ -5,6 +5,7 @@ $blue: rgba(23,20,97,1);
 $light_blue: rgba(171,134,255,1);
 $yellow: rgba(253,227,13,1);
 .main-landing{
+	background: $blue;
 	.video{
 		width: calc(100% - 30px);
 		margin: 0 15px;
