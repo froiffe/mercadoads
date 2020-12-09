@@ -95,7 +95,7 @@
     	</section>
 
         @if($local_lang == 'es')
-            @include('landings.nominados.nominados_es', [])
+            @include('landings.nominados.nominados_pt', [])
         @else
             @include('landings.nominados.nominados_pt', [])
         @endif

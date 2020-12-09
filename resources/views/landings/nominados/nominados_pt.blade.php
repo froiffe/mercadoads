@@ -133,6 +133,7 @@
 			</div>
 		</div>
 	</div>
+    <div class="separate"></div>
 </section>
 <section class="normal bg-blue">
 	<div class="container">

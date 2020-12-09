@@ -64,6 +64,13 @@ function initSlides(){
 		    }]
 		});
 
+
+
 	});
 	
+	$('.slick-dots').each(function(){
+	    if($(this).find('li').length <2 ){
+	    	$(this).remove();
+	    }
+	});
 }
