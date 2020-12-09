@@ -20,7 +20,7 @@
                         (object) [
                             'pais' => 'ARGENTINA',
                             'items' => (object) [
-                                ['logo'=>asset('assets/images/logos/bgh.png')],
+                                ['logo'=>asset('assets/images/logos/chevrolet.png')],
                                 ['logo'=>asset('assets/images/logos/mac.png')],
                                 ['logo'=>asset('assets/images/logos/vichy.png')]
                             ]
@@ -65,16 +65,16 @@
                         (object) [
                             'pais' => 'ARGENTINA',
                             'items' => (object) [
-                                ['logo'=>asset('assets/images/logos/gadnic.png')],
+                                ['logo'=>asset('assets/images/logos/simmons.png')],
                                 ['logo'=>asset('assets/images/logos/karcher.png')],
-                                ['logo'=>asset('assets/images/logos/simmons.png')]
+                                ['logo'=>asset('assets/images/logos/gadnic.png')]
                             ]
                         ],
                         (object) [
                             'pais' => 'México',
                             'items' => (object) [
-                                ['logo'=>asset('assets/images/logos/maybelline.png')],
                                 ['logo'=>asset('assets/images/logos/loreal.png')],
+                                ['logo'=>asset('assets/images/logos/blu-smartphones.png')],
                                 ['logo'=>asset('assets/images/logos/luuna.png')]
                             ]
                         ]
@@ -101,8 +101,8 @@
                             'pais' => 'LATAM',
                             'items' => (object) [
                                 ['logo'=>asset('assets/images/logos/realme.png')],
-                                ['logo'=>asset('assets/images/logos/toyota.png')],
-                                ['logo'=>asset('assets/images/logos/johnnie-walker.png')]
+                                ['logo'=>asset('assets/images/logos/toyota-plan.png')],
+                                ['logo'=>asset('assets/images/logos/diageo.png')]
                             ]
                         ]
                     ]
@@ -163,7 +163,7 @@
                             'pais' => 'ARGENTINA',
                             'items' => (object) [
                                 ['logo'=>asset('assets/images/logos/groupm.png')],
-                                ['logo'=>asset('assets/images/logos/havas.png')],
+                                ['logo'=>asset('assets/images/logos/havas-media.png')],
                                 ['logo'=>asset('assets/images/logos/omg.png')]
                             ]
                         ],
@@ -199,7 +199,7 @@
                             'items' => (object) [
                                 ['logo'=>asset('assets/images/logos/ferreteria-bulfer.png')],
                                 ['logo'=>asset('assets/images/logos/4-aspas.png')],
-                                ['logo'=>asset('assets/images/logos/electroworld.png')]
+                                ['logo'=>asset('assets/images/logos/electroworld-group.png')]
                             ]
                         ],
                         (object) [
@@ -215,7 +215,7 @@
                             'items' => (object) [
                                 ['logo'=>asset('assets/images/logos/north-bayou.png')],
                                 ['logo'=>asset('assets/images/logos/case-shop.png')],
-                                ['logo'=>asset('assets/images/logos/pamo-colombia.png')]
+                                ['logo'=>asset('assets/images/logos/pamo.png')]
                             ]
                         ],
                         (object) [

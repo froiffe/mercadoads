@@ -46,7 +46,7 @@
                             'pais' => '',
                             'items' => (object) [
                                 ['logo'=>asset('assets/images/logos/diageo.png')],
-                                ['logo'=>asset('assets/images/logos/luminus-whirlpool.png')],
+                                ['logo'=>asset('assets/images/logos/whirlpool.png')],
                                 ['logo'=>asset('assets/images/logos/ford.png')]
                             ]
                         ]
@@ -61,7 +61,7 @@
 	<div class="container">
 		<div class="centered-content">
 			<div class="row">
-				<h2>Contenido de Alto Impacto</h2>
+				<h2>Conteúdo de alto impacto</h2>
 			</div>
 			<div class="row">
                 @slide([
@@ -71,7 +71,7 @@
                         (object) [
                             'pais' => '',
                             'items' => (object) [
-                                ['logo'=>asset('assets/images/logos/protex.png')],
+                                ['logo'=>asset('assets/images/logos/colgate-palmolive.png')],
                                 ['logo'=>asset('assets/images/logos/intel.png')],
                                 ['logo'=>asset('assets/images/logos/heineken.png')]
                             ]
@@ -113,7 +113,7 @@
 	<div class="container">
 		<div class="centered-content">
 			<div class="row">
-				<h2>Agência de Media do Ano</h2>
+				<h2>Agência de Publicidade do ano</h2>
 			</div>
 			<div class="row">
                 @slide([
@@ -139,7 +139,7 @@
 	<div class="container">
 		<div class="centered-content">
 			<div class="row">
-				<h2>Vendedor como Anunciante do Ano</h2>
+				<h2>VENDEDOR ANUNCIANTE DO ANO</h2>
 			</div>
 			<div class="row">
                 @slide([

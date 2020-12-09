@@ -80,7 +80,7 @@
 					</div>
 					
 					<div class="row date-event">
-						<div class="row"><p class="date"><b>17 dic</b> Live Streaming</p></div>
+						<div class="row"><p class="date"><b>17 {!!$lang_text['text-09']!!}</b> Live Streaming</p></div>
 						<div class="row"><span class="countries">{!!$lang_text['text-08']!!}</span></div>
 					</div>
 
@@ -95,7 +95,7 @@
     	</section>
 
         @if($local_lang == 'es')
-            @include('landings.nominados.nominados_pt', [])
+            @include('landings.nominados.nominados_es', [])
         @else
             @include('landings.nominados.nominados_pt', [])
         @endif
