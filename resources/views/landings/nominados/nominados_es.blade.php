@@ -3,8 +3,7 @@
         
 		<div class="centered-content">
 			<div class="row text-section">
-				<p><b>Mercado Ads Awards</b> es nuestra forma de celebrar las mejores estrategias publicitarias del año y de seguir potenciando el negocio de marcas, agencias y vendedores en toda Latinoamérica.</p>
-                <p><b>Mercado Ads Awards</b> reúne a los expertos en publicidad de Mercado Libre, Kantar y MediaMonks para premiar a los desempeños más destacados en las siguientes categorías:</p>
+				<p><b>Mercado Ads Awards</b> es nuestra forma de celebrar las mejores estrategias publicitarias del año y de seguir potenciando el negocio de <b>marcas</b>, <b>agencias</b> y <b>vendedores</b> en toda Latinoamérica.</p>
 			</div>
 
 			<div class="row">
@@ -36,7 +35,7 @@
                         (object) [
                             'pais' => 'Colombia',
                             'items' => (object) [
-                                ['logo'=>asset('assets/images/logos/xiaomi.png')],
+                                ['logo'=>asset('assets/images/logos/xiaomi-largo.png')],
                                 ['logo'=>asset('assets/images/logos/huawei.png')],
                                 ['logo'=>asset('assets/images/logos/nespresso.png')]
                             ]

@@ -85,17 +85,19 @@ class HomeController extends Controller
             $data_text['text-04'] = 'MIN';
             $data_text['text-05'] = 'SEG';
             $data_text['text-06'] = 'PARA CONOCER LAS MEJORES<br> ESTRATEGIAS PUBLICITARIAS DEL AÑO';
-            $data_text['text-07'] = 'Agendar en mi calendar';
+            $data_text['text-07'] = 'Agendar en mi calendario';
             $data_text['text-08'] = '<b>14 a 15 HS</b> AR | CL | UY <br><b>12 a 13 HS</b> CO<br><b>11 a 12 HS</b> MX';
+            $data_text['text-09'] = 'dic';
         }else{
-            $data_text['text-01'] = 'FALTAN';
+            $data_text['text-01'] = 'FALTAM';
             $data_text['text-02'] = 'DIAS';
             $data_text['text-03'] = 'HORAS';
             $data_text['text-04'] = 'MIN';
             $data_text['text-05'] = 'SEG';
-            $data_text['text-06'] = 'PARA SABER O MELHOR<br> ESTRATÉGIAS DE PUBLICIDADE DO ANO';
+            $data_text['text-06'] = 'PARA CONHECER AS MELHORES<br> ESTRATÉGIAS DE PUBLICIDADE DO ANO';
             $data_text['text-07'] = 'Agendar no meu calendário ';
             $data_text['text-08'] = '<b>14 a 15 HS</b>';
+            $data_text['text-09'] = 'dez';
         }
 
         return $data_text;

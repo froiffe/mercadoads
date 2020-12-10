@@ -4,7 +4,6 @@
 		<div class="centered-content">
 			<div class="row text-section">
 				<p><b>Mercado Ads Awards</b> é a nossa maneira de celebrar as melhores estratégias publicitárias do ano e de continuar potencializando os negócios de marcas, agências e vendedores na plataforma N°1 da América Latina.</p>
-                <p><b>O Mercado Ads Awards</b> reúne especialistas em publicidade do Mercado Libre, Kantar e MediaMonks para premiar os artistas mais destacados nas seguintes categorias:</p>
 			</div>
 
 			<div class="row">
