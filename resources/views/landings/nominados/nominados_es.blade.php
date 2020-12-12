@@ -6,10 +6,10 @@
 				<p><b>Mercado Ads Awards</b> es nuestra forma de celebrar las mejores estrategias publicitarias del año y de seguir potenciando el negocio de <b>marcas</b>, <b>agencias</b> y <b>vendedores</b> en toda Latinoamérica.</p>
 			</div>
 
-			<div class="row">
+			<div class="row title-section">
 				<h1>Nominados</h1>
 				<h2>Mejor estrategia de Branding</h2>
-				
+				<p>Esta categoría premia a las marcas que se destacaron entre todas las industrias a la hora de hacer construcción de marca.</p>
 			</div>
 			<div class="row">
                 @slide([
@@ -35,7 +35,7 @@
                         (object) [
                             'pais' => 'Colombia',
                             'items' => (object) [
-                                ['logo'=>asset('assets/images/logos/xiaomi-largo.png')],
+                                ['logo'=>asset('assets/images/logos/xiaomi.png')],
                                 ['logo'=>asset('assets/images/logos/huawei.png')],
                                 ['logo'=>asset('assets/images/logos/nespresso.png')]
                             ]
@@ -53,8 +53,9 @@
 <section class="normal bg-blue">
 	<div class="container">
 		<div class="centered-content">
-			<div class="row">
-				<h2>Mejor Estrategia de Performance</h2>
+			<div class="row title-section">
+                <h2>Mejor Estrategia de Performance</h2>
+                <p>Esta categoría premia a las Tiendas Oficiales de marcas que lograron el mayor incremento en ventas generado por campañas de performance. </p>
 			</div>
 			<div class="row">
                 @slide([
@@ -76,6 +77,14 @@
                                 ['logo'=>asset('assets/images/logos/blu-smartphones.png')],
                                 ['logo'=>asset('assets/images/logos/luuna.png')]
                             ]
+                        ],
+                        (object) [
+                            'pais' => 'Chile',
+                            'items' => (object) [
+                                ['logo'=>asset('assets/images/logos/electrolux.png')],
+                                ['logo'=>asset('assets/images/logos/chilemat.png')],
+                                ['logo'=>asset('assets/images/logos/nestle.png')]
+                            ]
                         ]
                     ]
                 ]) @endslide
@@ -88,8 +97,9 @@
 <section class="normal bg-blue">
 	<div class="container">
 		<div class="centered-content">
-			<div class="row">
-				<h2>Contenido de Alto Impacto</h2>
+			<div class="row title-section">
+                <h2>Contenido de Alto Impacto</h2>
+                <p>Esta categoría premia al contenido más innovador en micrositios que haya generado un gran interés para el consumidor.</p>
 			</div>
 			<div class="row">
                 @slide([
@@ -115,8 +125,9 @@
 <section class="normal bg-blue">
 	<div class="container">
 		<div class="centered-content">
-			<div class="row">
-				<h2>Líder en Búsqueda de Marca</h2>
+			<div class="row title-section">
+                <h2>Líder en Búsqueda de Marca</h2>
+                <p>Esta categoría premia a las marcas que se destacaron a lo largo del año por conseguir el mayor crecimiento en búsqueda de marca.</p>
 			</div>
 			<div class="row">
                 @slide([
@@ -150,8 +161,9 @@
 <section class="normal bg-blue">
 	<div class="container">
 		<div class="centered-content">
-			<div class="row">
-				<h2>Agencia de Medios del Año</h2>
+			<div class="row title-section">
+                <h2>Agencia de Medios del Año</h2>
+                <p>Esta categoría premia a aquellas agencias de medios que desarrollaron las mejores estrategias publicitarias, que han impulsado a más clientes, otorgándoles aumento en ventas y eficiencias de inversión.</p>
 			</div>
 			<div class="row">
                 @slide([
@@ -185,8 +197,9 @@
 <section class="normal bg-blue last">
 	<div class="container">
 		<div class="centered-content">
-			<div class="row">
-				<h2>Vendedor Anunciante del año</h2>
+			<div class="row title-section">
+                <h2>Vendedor Anunciante del año</h2>
+                <p>Esta categoría premia a aquellos vendedores que alcanzaron la mayor cantidad de ventas a través de la activación de su campaña de Product Ads. </p>
 			</div>
 			<div class="row">
                 @slide([

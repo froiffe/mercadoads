@@ -216,6 +216,17 @@ $yellow: rgba(253,227,13,1);
     			line-height: 36px;
 			}
 		}
+		.title-section{
+			h2{
+				margin-bottom: 10px;
+			}
+			p{
+				font-weight: 300;
+				padding: 0px 100px;
+				margin-bottom: 38px;
+				font-size: 22px;
+			}
+		}
 	}
 
 	.slide-mp{
@@ -391,6 +402,12 @@ $yellow: rgba(253,227,13,1);
 			
 			.text-section {
 			    margin-bottom: 30px;
+				p{
+					font-size: 20px;
+					line-height: 27px;
+				}
+			}
+			.title-section {
 				p{
 					font-size: 20px;
 					line-height: 27px;
