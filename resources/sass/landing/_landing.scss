@@ -9,8 +9,24 @@ $yellow: rgba(253,227,13,1);
 	.video{
 		width: calc(100% - 30px);
 		margin: 0 15px;
-		height: 400px;
+		height: 600px;
 		background: $blue;
+		position: relative;
+
+		.title-video{
+			position: absolute;
+			z-index: 2;
+			left: 0;
+			top: 65px;
+			background: rgb(171,134,255);
+			background: linear-gradient(225deg, rgba(171,134,255,0) 0%, rgba(171,134,255,0) 20%, rgba(171,134,255,1) 40%, rgba(171,134,255,1) 100%);
+			padding: 15px 150px 15px 10px;
+			span{
+				color: #fff;
+				font-weight: bold;
+				font-size: 15px;
+			}
+		}
 	}
 	.icon-calendar{
 
@@ -512,6 +528,9 @@ $yellow: rgba(253,227,13,1);
 }
 @media screen and (max-width: 640px) {
 	.main-landing{
+		.video{
+			height: calc(100vh - 255px);
+		}
 		section{
 			&.counter{
 				.date-event{
