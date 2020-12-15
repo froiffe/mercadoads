@@ -36,5 +36,5 @@ return [
     'success-stories.details' => 'casos-de-exito/',
     'linkedin-url' => 'https://www.linkedin.com/showcase/mercadoads/',
     'landings.awards2020' => 'mercadoads-awards',
-    'landings.ganadores2020' => 'landings/ganadores2020',
+    'landings.ganadores2020' => 'mercado-awards-ganadores',
 ];

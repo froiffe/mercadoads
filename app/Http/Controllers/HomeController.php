@@ -73,7 +73,8 @@ class HomeController extends Controller
     }
 
     public function landingGanadores2020(){
-        return view('landings.ganadores2020');        
+        $data['local_lang']  = app()->getLocale();
+        return view('landings.ganadores2020',$data);        
     }
 
     public function getLanguageDataText(String $lang){
