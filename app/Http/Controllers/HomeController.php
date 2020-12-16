@@ -91,6 +91,7 @@ class HomeController extends Controller
             $data_text['text-08'] = '<b>14 a 15 HS</b> AR | CL | UY <br><b>12 a 13 HS</b> CO<br><b>11 a 12 HS</b> MX';
             $data_text['text-09'] = 'dic';
             $data_text['text-10'] = 'Vuelve a ver la primer entrega de los premios Mercado Ads Awards';
+            $data_text['text-11'] = 'https://player.vimeo.com/video/356661523';
         }else{
             $data_text['text-01'] = 'FALTAM';
             $data_text['text-02'] = 'DIAS';
@@ -102,6 +103,7 @@ class HomeController extends Controller
             $data_text['text-08'] = '<b>14 a 15 HS</b>';
             $data_text['text-09'] = 'dez';
             $data_text['text-10'] = 'Assista à primeira edição do Mercado Ads Awards novamente';
+            $data_text['text-11'] = 'https://player.vimeo.com/video/356661523';
         }
 
         return $data_text;
