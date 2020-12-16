@@ -5,6 +5,11 @@
     		<div class="container">
     			<div class="centered-content">
     				<div class="row"><img class="logo" src="{{ asset('assets/images/logo-awards.svg') }}"></div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="alert-custom">{{$lang_text['text-10']}}</p>
+                        </div>
+                    </div>
     				<div class="row">
     					<div class="video"></div>
     				</div>
