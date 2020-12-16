@@ -565,6 +565,7 @@ $yellow: rgba(253,227,13,1);
 		}
 		section{
 			&.counter{
+			    min-height: auto;
 				.date-event{
 					.date{
 						font-size: 22px;
