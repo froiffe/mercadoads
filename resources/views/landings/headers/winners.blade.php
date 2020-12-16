@@ -7,6 +7,9 @@
 			
 			<div class="row">
 				<div class="col-12">
+					<p class="alert-custom">{{$lang_text['text-10']}}</p>
+				</div>
+				<div class="col-12">
 					<div class="video">
 						<div class="title-video">
 							<span>Live Streaming</span>
