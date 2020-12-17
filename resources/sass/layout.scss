@@ -13753,3 +13753,51 @@ input.vermas {
       }
     }
   }
+
+
+.header-message{
+  position: relative;
+  width: 100%;
+  height: auto;
+    min-height: 30px;
+  background: #171461;
+  text-align: center;
+  z-index: 10;
+  align-items: center;
+  display: flex;
+  padding: 5px 20px;
+  p{
+    color: #fde30d;
+    font-size: calc(100vw * 24 / 1800);
+    margin: 0 auto;
+    a{
+      color: #fde30d;
+      font-weight: bold;
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .header-message{
+    height: auto;
+    min-height: 30px;
+    padding: 5px 20px;
+    p{
+      font-size: 20px;
+      a{
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-message{
+    p{
+      max-width: 260px;
+      line-height: 19px;
+      font-size: 15px;
+      a{
+      }
+    }
+  }
+}
