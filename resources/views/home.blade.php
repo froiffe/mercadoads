@@ -12,7 +12,7 @@
 @endphp
 
 @section('title')
-{{ $page->seo_title }}
+{{ (isset($page->seo_title)) ? $page->seo_title : ''}}
 @endsection
 
 @section('meta')
@@ -42,7 +42,7 @@
 
         <section class="section-home" data-scroll-section>
             <div class="header-message">
-                <p>Vuelve a ver el primer premio de los <a href="{{route('landings.ganadores2020')}}">Premios Mercado Ads></a></p>
+                <p>{{trans('home/general.revive-premiacion')}}<a href="{!! url(trans('routes.landings.ganadores2020')) !!}">Mercado Ads</a></p>
             </div>
             <!-- <div class="wrap"  > -->
                 <article class="section-general-headers">

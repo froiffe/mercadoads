@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'revive-premiacion'=>'Reviva a primeira premiação do ',
     'cookie-banner' => [
         'text' => 'Ao navegar neste site, você aceita os cookies que usamos para melhorar sua experiência.',
         'more-info' => 'Mais informações',
