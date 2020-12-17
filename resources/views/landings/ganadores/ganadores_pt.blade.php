@@ -2,7 +2,7 @@
     <div class="container">
         <div class="centered-content">
             <div class="row ganadores-row">
-                <h1>Ganadores</h1>
+                <h1>Ganhadores</h1>
                 <h2>Melhor Estratégia de Branding</h2>
             </div>
             <div class="row">
@@ -103,7 +103,7 @@
     <div class="container">
         <div class="centered-content">
             <div class="row">
-                <h2>Agencia de Medios del Año</h2>
+                <h2>Agência de Publicidade do ano</h2>
             </div>
             <div class="row">
                 @slide([

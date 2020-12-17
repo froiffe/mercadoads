@@ -102,7 +102,7 @@ class HomeController extends Controller
             $data_text['text-07'] = 'Agendar no meu calendário ';
             $data_text['text-08'] = '<b>14 a 15 HS</b>';
             $data_text['text-09'] = 'dez';
-            $data_text['text-10'] = 'Assista à primeira edição do Mercado Ads Awards novamente';
+            $data_text['text-10'] = 'Veja de novo a primeira entrega dos prêmios MercadoAds Awards';
             $data_text['text-11'] = 'https://player.vimeo.com/video/356661523';
         }
 

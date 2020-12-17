@@ -60,7 +60,7 @@
                             ]
                         ],
                         (object) [
-                            'pais' => 'COLOMBIA',
+                            'pais' => 'CHILE',
                             'items' => (object) [
                                 ['logo'=>asset('assets/images/logos/electrolux.png')]
                             ]
@@ -118,7 +118,7 @@
                         (object) [
                             'pais' => 'MÉXICO',
                             'items' => (object) [
-                                ['logo'=>asset('assets/images/logos/xioami.png')]
+                                ['logo'=>asset('assets/images/logos/xiaomi.png')]
                             ]
                         ]
                     ]
