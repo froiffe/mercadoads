@@ -13,6 +13,10 @@ $yellow: rgba(253,227,13,1);
 		background: $blue;
 		position: relative;
 
+		iframe{
+			height: 620px;
+		}
+
 		
 
 		.title-video{
@@ -493,6 +497,11 @@ $yellow: rgba(253,227,13,1);
 
 @media screen and (max-width: 768px) {
 	.main-landing{
+		.video{
+			iframe{
+				height: 420px;
+			}
+		}
 		.alert-custom{
 			padding: 10px 10px;
             line-height: 22px;
@@ -561,7 +570,9 @@ $yellow: rgba(253,227,13,1);
 				}
 			}
 
-			
+			iframe{
+				height: 200px;
+			}
 		}
 		section{
 			&.counter{

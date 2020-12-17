@@ -69,7 +69,7 @@ class HomeController extends Controller
         $data['lang_text']  = $this->getLanguageDataText(app()->getLocale());
         $data['local_lang']  = app()->getLocale();
 
-        return view('landings.awards2020',$data);
+        return view('landings.ganadores2020',$data);
     }
 
     public function landingGanadores2020(){
@@ -91,7 +91,7 @@ class HomeController extends Controller
             $data_text['text-08'] = '<b>14 a 15 HS</b> AR | CL | UY <br><b>12 a 13 HS</b> CO<br><b>11 a 12 HS</b> MX';
             $data_text['text-09'] = 'dic';
             $data_text['text-10'] = 'Vuelve a ver la primer entrega de los premios Mercado Ads Awards';
-            $data_text['text-11'] = 'https://player.vimeo.com/video/356661523';
+            $data_text['text-11'] = 'https://www.youtube.com/embed/gjuLqIrcqhQ';
         }else{
             $data_text['text-01'] = 'FALTAM';
             $data_text['text-02'] = 'DIAS';
@@ -103,7 +103,7 @@ class HomeController extends Controller
             $data_text['text-08'] = '<b>14 a 15 HS</b>';
             $data_text['text-09'] = 'dez';
             $data_text['text-10'] = 'Veja de novo a primeira entrega dos prêmios MercadoAds Awards';
-            $data_text['text-11'] = 'https://player.vimeo.com/video/356661523';
+            $data_text['text-11'] = 'https://www.youtube.com/embed/jW7AdNLFptw';
         }
 
         return $data_text;
