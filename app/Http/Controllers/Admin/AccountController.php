@@ -40,7 +40,12 @@ class AccountController extends Controller
 
                 if( $administrator )
                 {
-                    return redirect()->intended('admin/home');
+                    if (Auth::guard('admin')->user()->hasRole('superadmin')){
+                        return redirect()->intended('admin/home');
+                    }else{
+                        $message = "Nombre de usuario o contraseña incorrectos.";                        
+                    }
+                    
                 }
                 else
                 {
@@ -75,5 +80,10 @@ class AccountController extends Controller
         if( Auth::guard('admin')->user()->save() ) {
             return redirect()->route('account.my-account')->withSuccess('Cuenta actualizada correctamente.');
         }
+    }
+
+    public function loginContactos(Request $request)
+    {
+        return view('admin_contactos.account.login');
     }
 }

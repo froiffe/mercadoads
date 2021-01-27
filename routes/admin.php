@@ -33,6 +33,54 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function() {
 
 });
 
+Route::group(['prefix' => 'admin_contactos', 'namespace' => 'AdminContactos'], function() {
+
+    Route::get('login', [
+        'as' => 'admin_contacts.login',
+        'uses' => 'AccountController@login'
+    ]);
+    Route::post('authenticate', [
+        'as' => 'admin_contacts.authenticate',
+        'uses' => 'AccountController@authenticate'
+    ]);
+    Route::post('logout', [
+        'as' => 'admin_contacts.logout',
+        'uses' => 'AccountController@logout'
+    ]);
+    // account
+    Route::get('mi-cuenta', [
+        'as' => 'admin_contacts.account.my-account',
+        'uses' => 'AccountController@profile'
+    ]);
+
+    Route::post('mi-cuenta/actualizar', [
+        'as' => 'admin_contacts.account.update',
+        'uses' => 'AccountController@update'
+    ]);
+
+    Route::get('{contact}/ver', [
+        'as' => 'admin_contacts.contacts.show',
+        'uses' => 'ContactController@show',
+        'middleware' => ['role:contactos']
+    ]);
+
+    Route::group(['prefix' => 'contactos'], function() {
+        Route::get('/', [
+            'as' => 'admin_contacts.contacts.list',
+            'uses' => 'ContactController@list',
+            'middleware' => ['role:contactos']
+        ]);
+
+        Route::get('exportar', [
+            'as' => 'contacts.export',
+            'uses' => 'ContactController@export',
+            'middleware' => ['role:contactos']
+        ]);
+    });
+
+
+});
+
 Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => 'adminauth'], function() {
 
     Route::get('/', function() {
